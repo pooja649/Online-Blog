@@ -26,6 +26,40 @@ Date: 3-Feb-2022
 - The Common Gateway Interface, or CGI, is a standard for external gateway programs to interface with information servers such as HTTP servers.
  . Create a cgi scirpt.
  . Run it on Localhost using Apache Server.
+ 
+Date: 4-Feb-2022
+<h3 align='center'>Image to video</h3>
+
+- To write a script throungh which images be converted into video
+
+Date: 5-Feb-2022
+<h3 align='center'>Introduction to frappe</h3>
+
+- Frappe, pronounced fra-pay, is a full stack, batteries-included, web framework written in Python and Javascript with MariaDB as the database. It is the framework which powers ERPNext, is pretty generic and can be used to build database driven apps.
+#### Why Frappe?
+
+The key difference in Frappe compared to other frameworks is that meta-data is also treated as data. This enables you to build front-ends very easily. We believe in a monolithic architecture, so Frappe comes with almost everything you need to build a modern web application. It has a full featured Admin UI called the Desk that handles forms, navigation, lists, menus, permissions, file attachment and much more out of the box.
+
+ Date: 7-Feb-2022  
+ <h3 align='center'>Creating Site and App & run on local server in Frappe</h3>
+ 
+ - Open the Terminal and start bench.
+ - In Second Terminal, create App by using bench new-app library_management inside Frappe-bench Directory.
+ - By using bench new-site library.test, create site inside Frappe-bench Directory.
+ - Run Site on Localhost by using library.test custom port name.
+ 
+ Date: 8-Feb-2022  
+ <h3 align='center'>Creating Site and App & run on local server in Frappe</h3>
+ 
+ 
+
+
+ 
+
+
+
+
+
 
 
 
