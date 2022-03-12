@@ -49,7 +49,7 @@ The key difference in Frappe compared to other frameworks is that meta-data is a
  - Run Site on Localhost by using library.test custom port name.
  
  Date: 8-Feb-2022  
- <h3 align='center'>Creating Site and App & run on local server in Frappe</h3>
+ <h3 align='center'>Introduction to Github Pages</h3>
  
  
 
