@@ -536,6 +536,163 @@ Using this we get error the we take reference from other discuss.erpnext where w
 - Also we restrict user from Modules.       
 
 <br>
+ <!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 22-Apr-2022**
+<h3 align='center'>Creating web template for display Diary using Bootstrap-4</h3>
+
+- Learn how to use bootstrap in frappe web template.
+- By using Bootstrap class create web page which is responsive and give good look to our template.
+- Apply different designing like borders, text color classes, actions on link.  
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 23-Apr-2022**
+<h3 align='center'>Making new specification and Flow for Noticeboard App</h3>
+
+- Notice will be created by CLERK then it will be in draft state.
+- CLERK and HOD can create notice no one else from other department able to create notice for their department.
+- Another requirement when notice is created by clerk It will be in Draft state when Hod Submit Notice only then it would be published.
+- Naming Series of notice maintained department wise eg: Notice-CSE/2022/00001, Notice-CIVIL/2022/00001.
+- If HOD Cancel the notice then Clerk is able to make changes then again send it to HOD.  
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 25-Apr-2022**
+<h3 align='center'>Creating doctype in Existing Noticeboard App</h3>
+
+- In First approach we decide to use create doctype and apply workflow on it.
+- Where all states are defined like Approve by hod, Draft etc.
+- We allote Department to their Respective Hod and Clerk  So that they are able to create notice.
+- Every thing Works fine but When we apply some code then workflow states create problem. eg data is saved but changes apply with delay.
+- We find workflow also make task for app difficult because its file is not created inside the app that why it portability is difficult.
+- So we decide to work without workflow also learn new things from mistakes.   
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 26-Apr-2022**
+<h3 align='center'>Naming Series as Department wise</h3>
+
+- Assigning department to Hod & Clerk to one department in User Permission List.
+- We use condition like cse = department_name.
+- Department_name is fetched from doctype use function self.fieldname.
+- After apply such condition we use make_autoname function.
+- self.name = make_autoname('NOTICE-'+'CSE'+'/'+'.YYYY.'+'/'+'.#####')
+- This function return series 'NOTICE-CSE/2022/00001'
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 27-Apr-2022**
+<h3 align='center'>Fetching HOD by using variables in query</h3>
+
+- First we use Simple Frappe query "frappe.db.get_value('User', 'hodcse@gmail.com', 'full_name')".
+- But this depends upon the email of hod if email will change in future then we need to change it.
+- Also we have to wrote this many times.
+- So we use another optimized version of query.
+<br>
+
+```py
+department = self.department
+requiredRole = "Hod" 
+		
+		self.hod = frappe.db.sql(f""" select full_name 
+			from `tabUser` 
+			where `email` IN (select user 
+			from `tabUser Permission` 
+			where `for_value`="{department}" AND `user` IN (select parent 
+			from `tabHas Role` 
+			where `role`="{requiredRole}" )) """)
+```
+
+- By using this query with variable we are able to use this for all departments.
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 28-Apr-2022**
+<h3 align='center'>New Fee requirent</h3>
+
+- First we Create Fee Categories Like Development Fee, Tutuion Fee, Transportation fee.
+- Creating Fee Structure For Different Classes and it depends on siblings fee.
+- Like If a Student has one sibling than Tution fees would be 50% discount, If there are two Siblings than Tution Fee would be 25%.
+- Transportation Fee depends on various routes eg Bus Fee for Route1 : 500/- than Fee for Route2 : 400/-.
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 29-Apr-2022**
+<h3 align='center'>Implementing Fee on local server</h3>
+
+- First we import data like Program, student, courses.
+- Creating Fee category as per requirement Development Fee, Tution Fee, Transporatation Fee.
+- Finding a way how to link siblings of same school using minimal customization.
+- We set up students who have siblings but when we select option siblings studying in the same school then we are able to select students from available students but the program is not fetched.
+- Along with this We find the received income cost center is also set in schedule. We can find all the income in the Fee cost center.
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 30-Apr-2022**
+<h3 align='center'>Try to optimize Notice.py Code</h3>
+
+- As we use department for naming series so for this we have to change code when department and its abbrivation changed.
+- To Remove this we add department abbrivation field in doctype.
+- With following query abbr depends upon the department abbrivation also we haven't make changes in code also code become more simple than previous code. 
+<br>
+
+```py
+department=self.department
+abbr=frappe.db.get_value( 'Department' , department ,'department_abbreviation' )
+self.name=make_autoname( 'NOTICE-' + abbr + '/' + '.YYYY.' + '/' + '.#####' )
+```
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 2-May-2022**
+<h3 align='center'>Creating Roles and permissions</h3>
+
+- Creating Director Role and add permission for Viewing accounts, payroll, Employee details etc.
+- Customize Deskview for Director Role.
+- Creating Principal Role and add all academic views for Principal.
+- Creating Instructor Role and allow all permissions needed to do their tasks.
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 3-May-2022**
+<h3 align='center'>Learn Different Salary component for Employee Salary</h3>
+
+- Basic Pay of employee as per college pay scale.
+- Add 5% Interim Relief in Basic pay.
+- Adding Dearness allowance 142% in Basic Pay.
+- Medical Allowance,CCA,PF(10%),HRA.
+- These all are Earning in salary.
+- Then we add Deduction component like PF(20%),Development tax, GI, SML, SMAF.
+- By calculating all Earning & Deduction, we get Net Paid Amount. 
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 4-May-2022**
+<h3 align='center'>Creating Salaries</h3>
+
+- First we create salary component which are fixed these are declared in Salary Component.
+- Next Create Salary Structure in which we group all Salary Component which are earning and deduction components.
+- Setting up formula on Basic Pay like calculate IR(5%), ADA(142%) etc.
+- After Successfully creating salary structure assigning it to employee where we define the Basic pay of Employee.
+- At last in Salary Slip we select employee to whom we assign salary then salary structure automatically fetched and calculate base salary.    
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 5-May-2022**
+<h3 align='center'>Creating Presentation with Other Team-mates in Reveal.JS</h3>
+
+- Review all work which is done by us.
+- Creating presentation add all Salary Components required.
+- Add how Desk is visible for different Roles.
+- What is visible to all student.
+- Explaing other modules like Accounts, Assets, Payroll, Human Resource, Education Domain.
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 6-May-2022**
+<h3 align='center'></h3>
+
+<br>
  
  
 
