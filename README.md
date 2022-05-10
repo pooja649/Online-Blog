@@ -128,24 +128,31 @@ It helps you to effectively manage administration and allows you to focus on wha
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 17-Feb-2022** 
-## Introduction to Jinja Templating
-<p align='justify'>Jinja is a fast, expressive, extensible templating engine. Special placeholders in the template allow writing code similar to Python syntax. Then the template is passed data to render the final document.</p>
-
-<br>
+## Testing Slides2Video script
+<p align='justify'>Testing the Slides2Video script in Windows by following the documentations provided by the creator, taking diffrent images of diffrent sizes and of different resolutions and provided different captions and diffrent stuff.
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 18-Feb-2022** 
-## Trying to fetch data from database using Jinja Templating
-- Write a Python Script for establish connection with Mariadb.
-- Still it gives permission error try to solve it.
+## Docker Vs Virtual Machine
+- Docker is popular virtualization software that helps its users in developing, deploying, monitoring, and running applications in a Docker Container with all their dependencies. Docker containers include all dependencies (frameworks, libraries, etc.) to run an application in an efficient and bug-free manner.
+- A virtual machine (VM) is a computing environment or software that aids developers to access an operating system via a physical machine.
+
 
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 19-Feb-2022** 
-## Working with server
-- Resetting the password of server.
-- Trying to install Erpnext on server.
+## Use cases of Docker
+1. Early application development
+  - By creating Docker container images for the app and executing them with Docker or another runtime, developers can test the app from a local development
+    PC without execution on the host OS.
+2. Multi-cloud or hybrid cloud applications
+  - Docker containers are portable, which means they can move easily from one server or cloud environment to another with minimal configuration changes 
+    required.
+3. Cost control
+  - The efficiency of Docker containers relative to VMs makes Docker a handy option for teams that want to reduce how much they spend on infrastructure. By 
+    taking applications running in VMs and redeploying them with Docker, organizations will likely reduce their total resource consumption.
+
 
 <br>
 
@@ -166,6 +173,7 @@ It helps you to effectively manage administration and allows you to focus on wha
 
 <br>
 
+	
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 23-Feb-2022** 
 ## How to use ssh
@@ -199,8 +207,7 @@ It helps you to effectively manage administration and allows you to focus on wha
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
-**Date : 2-Mar-2022** 
-## Learn Module from Frappe School
+**Date :ol
 - Creating new site with new app.
 - Creating Doctype and linking doctype with other.
 - Learn Jinja Script for frappe doctypes. 
@@ -378,10 +385,10 @@ Using this we get error the we take reference from other discuss.erpnext where w
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 29-Mar-2022**
-## Web Manager Vs Website Manager
-- For new users we create web manger who has permission to create webpage,See on website, Search box, can't create webform.
-- Website Manager can delete webpage, read webpage but cannot create, Search bar not shown.
-- We assign new user web user so that they can access gne11 website with some restriction.
+## Assigning course to an instructor
+- A course can be considered as a subject or a part of an educational program which is to be taught for a term.
+- Go to Course List and click on New, Enter the Course Name. Select the Department under which this course is being made.
+
 
 <br>
 
@@ -466,85 +473,83 @@ Using this we get error the we take reference from other discuss.erpnext where w
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 12-Apr-2022**
-## Learning Permission for Human Resource & Payroll
-- For Finding permission rule of HR Role we create a user in Erpnext.
-- Then assign HR User role to new user and find what permissions are available.
-- After this we use HR manager Role and learn its role for Human Resource & Payroll.
-- We find that HR manager has more power than HR user in some case like to delete and cancel records etc. 
+## Role and  Permission to new Users
+- Allow new users to create Library Management System, need to give them the access of doctype modules.
+- Go to doctype list and create new role where new user create doctype by can’t delete doctype.
+- Similarly for Module we use select permission where user can select module but can’t read module.
+
+
 
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 13-Apr-2022**
-## Email Notification for every push operation
-- For this we need to go inside the repository settings.
-- Go to Integration section, Add email address the limitation is only two email address are used there.
-- To solve this notification, We find one more solution where in commit section optional description.
-- We can add the user profile name where we want to send email notification. 
+## Enabling chat options for the student users
+   
+- To enable chat options for studnets as they didn't have desk access or chat option. 
+- To enable chat access we need to give all the students desk access but very limited
+- Give 2-3 students customer role with the students role then they have desk access and also chat access.
+
+
 
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 16-Apr-2022**
-## Working on Daily Dairy as per new specification
-- First we create new app named Daily Dairy.
-- Create new doctype under new app Daily Dairy Class1.
-- Creating fields and write some code for add fields automatically.
-- Now we are working on permission how to show it to only specific group.
+## Cost Center at gne11.gndec.ac.in
+- A Cost Center is a part of an organization where costs or income can be charged
+- A Cost Center acts like an Accounting Dimension which helps you track costing based on particular areas for a particular company.
+- For example-we want to track the sales, purchases, expenses and profit net worth, we can add different nodes of cost center for a particular field.
+- In Chart of Accounts we have whole details of amount in the receivable account and different kinds of accounts.
+
 
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 18-Apr-2022**
-## Creating Daily Diary module in Notification App
-- Installing Notification app on local system.
-- Creating module named Daily Diary save it on notification app.
-- Then push app on other team-mate github repository. 
-
+## Permissions in Frappe/ERPNext
+- User Permissions are used to limit users to specific records. Setup> User Permissions
+- Select Document Types to set which User Permissions are used to limit access.Once you have set this, the users will only be able access
+  documents (eg. Blog Post) where the link exists (eg. Blogger).
+- Apart from System Manager, roles with Set User Permissions right can set permissions for other users for that Document Type.
+ 
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 19-Apr-2022**
-## Adding app on friend Repository
-- First I fork Repository in my Repository.
-- Install App on another local system then made changes on notification app like adding some code and fields.
-- Then again push code in my github Repository.
-- Create new pull request for Repository where I Frok Repository & Merge changes in main Repository.
-- But when we use desk there is no changes in desk as per changes on git, then we check the local directory changes must there but it can't refelect in frappe.
-- So here we again remove app and again install app & this time chnages work properly.
+## Permissions in Frappe/ERPNext
+- Permissions at level 0 are Document Level permissions, i.e. they are primary for access to the document.
+- Permissions at higher levels are Field Level permissions. All Fields have a Permission Level set against them and the rules defined that permissions       apply to the field. This is useful in case you want to hide or make certain field read-only for certain Roles.
+- You can use Customize Form to set levels on fields. Setup > Customize Form
 
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 20-Apr-2022**
-## Adding Filters on doctype as per requirement
-- As per requirement changes for achieve this we add filter in list-view like class-wise, subject-wise, date-wise filter.
-- For creating filters on desk we need to go to Doctype.
-- On click edit we need check option In List View, In Standard Filter.
-- Then on save changes filters are available on desk list-view of doctype.
+## Desk Customization
+- To customize the desk according to roles and permissions,so a particular user has access to particular tabs like student,instructor, programs etc. 
+- Giving different permissions one by one  to the user in order to find whether getting the desired result or not.
+- To show diffrent DFD's, charts etc.
+- To provide permissions and access to diffrent users.
 
 
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 21-Apr-2022**
-## Adding Role and permission to Users
-- When all the task done then we find Roles and permission for Daily Diary Doctype.
-- For this we add new user whom we give role Student and create new role under Doctype named DocPerm Who has permission to read.
-- In Daily Diary Doctype we give read permission to Student and all permission to Instructor.
-- Then assign Two Role to new user 'Student' + 'Docperm' for student & 'Instructor' + 'Docperm' for Instructor.
-- Also we restrict user from Modules.       
+## Web views of attendance module to teacher on LMS
+- To provide the easy access of different modules like attendance, quiz etc..
+- under the LMS folder, I found a file named course.html and there I pasted the link for the attendance and other modules so the instructor won't face any   problem while finding these modules.
+
 
 <br>
  <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 22-Apr-2022**
-<h3 align='center'>Creating web template for display Diary using Bootstrap-4</h3>
+<h3 align='center'>Presentation on Cost Centre-4</h3>
+Today I gave presentation to all my mates in which about the Cost Centre in Erpnext and explained about the diffrent nodes of cost center about the particular field. I have explained about the chart of accounts where we have whole details of amount in the receivable account and different kinds of accounts.
 
-- Learn how to use bootstrap in frappe web template.
-- By using Bootstrap class create web page which is responsive and give good look to our template.
-- Apply different designing like borders, text color classes, actions on link.  
+ 
 <br>
-
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 23-Apr-2022**
 <h3 align='center'>Making new specification and Flow for Noticeboard App</h3>
