@@ -158,75 +158,86 @@ It helps you to effectively manage administration and allows you to focus on wha
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 21-Feb-2022** 
-## Mysql Administration, Converting pdf to md file
-- Today I created a new doctype in erpnext with different options
-- then learned about the administration concept of database
-- Converting pdf file to md and applying changes using markdown.
+## Role / use of mosh and tmux in our workflow?
+Role/Use of Mosh-
+-the ability to reconnect after sleeping/hibernating whatever local host I’m on, or roaming between different wifi networks.
+-some basic persistence, so my foreground processes don’t die if my local host loses connection.
+
+Role of Tmux-
+-enables a number of terminals to be created, accessed, and controlled from a single screen.
+- tmux may be detached from a screen and continue running in the background, then later reattached.
+
+
 
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 22-Feb-2022** 
-## Add new user in ubuntu
-- Add new user in ubuntu.
-- trying to give access of database to other user.
+## Comparison between ErpNext 12 and 13 version
+-The major difference is the UI interaction. In ERPNext 13 the UI design is very user friendly as compared to ERPNext 12 version,
+- In the 13 version , we have access to different themes well , this feature is not available in the 12 version.
+- In ERPnext 12 version we have to manually set up the domains which is time consuming while on the other hand in 13 version it give us pre-processed         domains with very clean UI which makes it simpler.
+- In version 13 while setting up it automatically created a blog/webpage for the user and in version 12 this is missing or we can manually create it .
+
 
 <br>
 
 	
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 23-Feb-2022** 
-## How to use ssh
-- Login to Server, Try to help other member to install ldap on server.
-- Apply different permission related queries on database for different user.
+## Education module in ErpNext version 12 and 13
+- Studied about the education module of both the version.
+- Various fields and diffrences of user interface in both the versions. 
 
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 24-Feb-2022** 
-## Learning about how to import data in erpnext from csv file
-- Try to import data in erpnext app throught csv file.
-- Apply pagination in erpnext webpage.
+## Course Schedule in ErpNext
+- Course Schedule can be used for scheduling a particular course by an Instructor.
+- Create a new Course Schedule from the Schedule Calendar.Select the Student Group for which you want to create the Course Schedule.
+- Select the Instructor who will be tutoring the students for the course.Select the Course for which the schedule is being prepared.
+- Add the From Time and To Time for the Course Schedule.Select and add the Room wherein the Lecture would be conducted.
 
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 25-Feb-2022** 
-## Import Data in Mysql
-- Try to import data in MariaDB throught csv file.
-- Learning the concept of permission on Server.
+## Scheduling Tool to create Course Schedule
+- Select Student Group for which you need to create Course Schedules.Select Course, Room and Instructor for Course Schedules.
+- Add different fields and click on the 'Schedule Course' button.
+- If you wish to reschedule Course Schedules created against a Course, Check the 'Reschedule' checkbox and then click 'Schedule Course' button.
 
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 28-Feb-2022** 
-## Creating Web page in ErpNext
-- Creating Static Webpage on Erpnext.
-- Learning Frappe School Module.
+## Introduction to Jinja Templating
+- A Jinja template is simply a text file. Jinja can generate any text-based format (HTML, XML, CSV, LaTeX, etc.). A Jinja template doesn’t need to have a     specific extension: .html, .xml, or any other extension is just fine.
+- A template contains variables and/or expressions, which get replaced with values when a template is rendered; and tags, which control the logic of the     template. The template syntax is heavily inspired by Django and Python.
 
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
-**Date :ol
-- Creating new site with new app.
-- Creating Doctype and linking doctype with other.
-- Learn Jinja Script for frappe doctypes. 
+**Date :01-Mar-2022**
+## Chat in ErpNext
+- The Chat room is a tool, which allows you to send and receive messages to other Users within your ERPNext account.
+- To start a Chat, you can click on the Chat icon on the Desk. When you do this, a Chatbox will Pop Up, which will have a list of all the Users you have     been chatting with. 
 
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 3-Mar-2022** 
-## Learn Meeting App
-- Understand the structure of meeting app.
-- Understand the javascript code and python code of meeting app.
+## Chat Room in ErpNext
+For every new Chat that has been opened in the system, a Chat Room gets created. A list of all your Chat Rooms can be fetched in the Chat Room List when you search for it from the Global search.
 
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 4-Mar-2022** 
-## Presentation and discussion of meeting app
-- Telling about the importance of doctype in Frappe-Framework.
-- Discuss with all team how it works and how we create new custom app.
+## Chat Profile Report
+-This report shall show you a list of all the active profiles in your ERPNext account with whom you can start a chat.
+-To start a new chat, simply type the name of the User in the search bar of chatbox and start communicating.
 
 <br>
 
