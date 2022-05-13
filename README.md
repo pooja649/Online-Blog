@@ -261,7 +261,7 @@ For every new Chat that has been opened in the system, a Chat Room gets created.
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 8-Mar-2022** 
-## Learning about built in Note Doctype
+## Assesssment  in Education Domain
 - Today I'm Differentiate between Noticeboard app and inbuilt note app.
 - Trying to understand note doctype functionality.
 
