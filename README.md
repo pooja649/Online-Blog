@@ -262,34 +262,36 @@ For every new Chat that has been opened in the system, a Chat Room gets created.
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 8-Mar-2022** 
 ## Assesssment  in Education Domain
-- Today I'm Differentiate between Noticeboard app and inbuilt note app.
-- Trying to understand note doctype functionality.
+- Implemented the assessment module in gne11.gndec.ac.in. First created Assessment Creteria .
+- Assessment criteria can be used while scheduling assessment plan for student group and course. Then next, I have created Assessment group tree             (hierarchy for examination conducted in school) for one batch i.e 2021-2022.
+- Next I created Assessment plan which is schedule to conduct the examination/assessment of a particular course for a group of students in an on-going       academic term. 
 
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 9-Mar-2022** 
-## Learning about Workflow
-- Today I'm learning Workflow in ErpNext.
-- Understand how to pass control to different manager.
-- Trying to implement Purchase order list and trying to approve it from purchase manager and material manager.
+## Setup of Assessment Module 
+- I have created grading scale and assessment result as following: Grading Scale Grading scale define the threshold for the different grades obtained by     the students, based on their scores in the assessment. 
+- For example , I have created grading scale of Students obtaining a score of 100% would be graded as O, students obtaining a score of 80% and below would   be graded A- and so on. 
+
 
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 11-Mar-2022** 
-## Working with Dynamic pages in Frappe
-- First I need to create www directory in any Frappe app.
-- Then I need to create two files Python file for fetching data from database.
-- Other file is html file in which i use jinja template to show record on webpage.
+## Student Admission 
+- Registered the students via form and by using csv files to import data.
+- After importing or registration via form,need to approve or reject the applications of students for admission. 
+- Then I approve the applications of all the students, after approval I have enrolled the applications to the respective programs.
 
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 12-Mar-2022** 
-## Trying to add pagination on Dynamic page
-- First try to control send data to python file from html file.
-- But this won't work then i create post on discuss Erpnext where i get answer and trying to use javascript.
+## Next steps in Student Admission
+- After enrollment in the programs, need to enroll students in courses.
+- Then I created sample courses for specific standard and enrolled the students into the respective courses.
+- After enrollment in the courses, assigned the instructor to the students.
 
 <br>
 
@@ -320,14 +322,14 @@ For every new Chat that has been opened in the system, a Chat Room gets created.
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 17-Mar-2022** 
-## Solve Problem While deleting records
-<p align="justify">I'm exploring how to delete such payment entries which are linked with GL Entry. For this we need to go to Account Settings and Enable a checkbox Delete Accounting and Stock Ledger Entries on the deletion of Transaction and then all such Cancelled entries deleted normally.</p>
+## Understanding the structure of student module in erpnext
+<p align="justify">The Student document will hold all the data of any Student in your Academy like their Personal Information, Photo, Date of Birth, Address, etc. In student module we have different doctypes like student group, student attendence, programs, classes. I added the data in these doctypes so that I can understand the structure of module properly.</p>
 
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 19-Mar-2022** 
-## Add Frappe app in repository
+## Understanding the structure of student module in erpnext
 - First I go through the git documentation, so that every thing done properly.
 - In add on I'm finding a command how to add repositiory from terminal to github.
 - After doing task completely I made documentation on github pages so that it help other team-members
