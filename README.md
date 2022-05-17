@@ -322,44 +322,44 @@ For every new Chat that has been opened in the system, a Chat Room gets created.
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 17-Mar-2022** 
-## Understanding the structure of student module in erpnext
-<p align="justify">The Student document will hold all the data of any Student in your Academy like their Personal Information, Photo, Date of Birth, Address, etc. In student module we have different doctypes like student group, student attendence, programs, classes. I added the data in these doctypes so that I can understand the structure of module properly.</p>
+## Define Socket.IO
+- Socket.IO provides bidirectional, event-driven communication capabilities for use in real time applications.
+- It consists of a client-side browser library and a server-side Node.js library, both of which use similar syntax to enable an easily scriptable interface   for developers.
+- The primary function of Socket.IO is to act as an abstraction layer for existing real-time protocols.
+
 
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 19-Mar-2022** 
-## Understanding the structure of student module in erpnext
-- First I go through the git documentation, so that every thing done properly.
-- In add on I'm finding a command how to add repositiory from terminal to github.
-- After doing task completely I made documentation on github pages so that it help other team-members
-- For Documentation [Click here](https://vishal78626.github.io/Add-Frappe-app-in-GitRepo/) 
+## Need to bother about Socket.IO
+- Socket.IO may make things a bit easier for sure; we don’t have to worry about load balancer-related issues, connection failures, and message               broadcasting…
+- Socket.IO can fall back to technologies other than WebSockets when the client doesn’t support i
 
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 21-Mar-2022** 
-## Understand the code available in Frappe
-<p align="justify">Understanding the code available in all-products, then we are trying to add items in item lists, then we face problem after few search then we add items in (item lists), then add item in (website item), then setting up e-commerce settings now we successfully use search, prev & next. Now we are trying to apply it in a pagination file.</p>
+## Implementation of Library Management System
+<p align="justify">LMS allows institutes to publish their programs on their website. Programs can contain rich text articles, videos, and even quizzes. To enable LMS go to: Home > Education > Settings > Education Settings. </p>
 
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 22-Mar-2022** 
+## Setting up the Masters for Learning Management System
+- Programs:To make the Program accessible on the portal, tick the 'Is Published' checkbox in the Program form.The portal will automatically fetch the         courses from the course table in the program.
+- Portal Settings:On the portal, for students to be able to view the programs on the portal, a program has to be marked as Published. On the portal           students will be able to see only those courses they are enrolled to or they are allowed to enroll into.
+  If 'Allow Self Enroll' is not checked, the program will be visible to only those students who are already enrolled in the program, this way you can host   private programs on your portal.
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 23-Mar-2022** 
 ## Installing new Erpnext on server
 - First we install frappe framework then install erpnext with education domain.
 - After this we are collecting students and teachers data from Nankana Sahib Public School.
 - Arranging data according to doctype in erpnext.  
 
-<br>
-
-<!----------------------------------------------------------------------------------------------------------------------------->
-**Date : 23-Mar-2022** 
-## Arrange naming series company wise
-<p align="justify">While new applicant is registered in system by default system generate naming series. We are trying to change it company wise For eg. if we are member of company A, then naming series include A-2022-00001.</p>
-For this we follow official erpnext tutorial [More Detail](https://docs.erpnext.com/docs/v13/user/manual/en/customize-erpnext/articles/company-wise-naming-series#:~:text=The%20need%20is%20to%20create,be%20SINV%2DB%2D0001.)
-Using this we get error the we take reference from other discuss.erpnext where we use (.abbr.-.YYYY.-) in option of Naming Series. 
- 
  <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
@@ -372,27 +372,28 @@ Using this we get error the we take reference from other discuss.erpnext where w
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 25-Mar-2022** 
-## Learning Employee Salary module
-- For Employee or Teacher salary I need to lean Payroll module in Erpnext.
-- In this I learn Payroll Period, Income Tax Slab, Salary Component and Structure, Generating Salary Recipt.
+## Presentation on Library Management System
+- I gave presentation of Library Management System to the rest of the trainees. 
+- I have explained that how to create site, app, different doctypes, controller methods and different doctype features.
+
 
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 26-Mar-2022** 
-## Implementing Payroll in Erpnext
-- First Create Salary Component where i create New Component type as Earning and create PF as Deduction and add base amount in condition section.
-- Create Salary Structure with Earning and Deduction, Selecting account,Payroll Frequency as montly, daily, weekly etc.
-- In New Salary Structure Assignment we assign employee to Salary Structure.
-- After this we go to Salary slip here i need to create holiday list and assign holiday to company then we successfully generate salary slip.
+## Arranging Teachers Data
+- To arrange the data in proper sequence order as there is huge amount of teachers data.
+- Arrange the Teacher's data according to name and email id's in proper sequence order.
+
 
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 28-Mar-2022** 
-## Payroll Entry in Erpnext
-- In payroll entry we can create salary for bulk of employee.
-- For payroll entry we have an attendance of employees, only then we can create payroll entry for employee.  
+## Suuccessfully imported users and employees from .csv file
+- First, sorted all the data according to the need in a separate file. After that created another file to import the users with username and password. 
+- Then successfully imported all the employees with another file using data import tool. For this needed the user id of all the users so exported all the     user id's of user and added in the employees file.
+ 
 
 <br>
 
