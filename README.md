@@ -709,8 +709,189 @@ self.name=make_autoname( 'NOTICE-' + abbr + '/' + '.YYYY.' + '/' + '.#####' )
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 6-May-2022**
-<h3 align='center'></h3>
+<h3 align='center'>Working on Mentor-Mentee Task without erpnext</h3>
 
+- Creating new database in which three tables Mentor, Mentee & Relation.
+- Import data in these tables using csv files through terminal.
+- Make connection of database with python file.
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 7-May-2022**
+<h3 align='center'>Install and use Flask</h3>
+
+- As we need to show detail on webpage using jinja templating.
+- After few searches we decide to use flask as a framework which render jinja template for html file.
+- Again Make connection with database, but this time as adviced by teacher. we need to hide credential from public so that we push it on git.
+- For hiding credentials we load details from another python file.
+- Write basic hello world program and render it using jinja templating.
+<br>
+
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 9-May-2022**
+<h3 align='center'>Showing detail in html file using jinja</h3>
+
+- Creating a templates folder inside flask app where all the html files put together
+- Make a funtion in which we put query select Mentor name from mentor table.
+- Then render template with data and file name in which template is shown
+```py
+@app.route('/')
+def example():
+    cur.execute("SELECT Name FROM Mentor")
+    data = cur.fetchall()
+    return render_template('index.html', output = data)
+```
+- cur.execute is used for query and cur.fetchall() fetch all names from mentor table.
+- And at the end funtion return render template in which filename, and assign data to output variable.
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 10-May-2022**
+<h3 align='center'>Showing Data on Webpage with Jinja and Bootstrap code</h3>
+
+- Jinja template code for showing data on webpage. 
+- In the below code under block content section we run a loop which fetch data from flask app.
+- row[0] is used for show data without braces.
+- jinja template code with Bootstrap
+
+```jinja
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container">
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Mentor Name</th>
+          <th scope="col">Mentee Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr rowspan="4">
+          <td class="border">{{ mentor }}</td>          
+          <td class="border">
+          {% for row in output1 %}         
+            {{ row[0] }}              
+            <br>
+          {% endfor %}
+        </td>
+        </tr>
+        
+        </tbody>
+      </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
+```
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 11-May-2022**
+<h3 align='center'>Adding bus Fee in Fee doctype of erpNext</h3>
+
+- By default we have Fee component in which all fee categories are fetched but as per our requirement we need to add bus fee which is different for each student.
+- For which First we create two doctype one in which Route detail with Fees is stored and second is child doctype called Bus component which is fetched in Fee doctype.
+- Then Apply changes in Bus component like fetch value from Route detail doctype.
+- For calculating total bus component and fee component we have to write some code in fee.js file.
+
+```js
+calculate_total_amount: function(frm) {
+	var grand_total0 = 0, grand_total1 = 0, grand_total = 0;
+
+	for(var i=0;i<frm.doc.components.length;i++) {
+		if( frm.doc.components[i].amount >= 0){
+			grand_total0 += frm.doc.components[i].amount;
+		}
+		else{
+			grand_total0 = 0;
+		}
+	}
+
+	if(frm.doc.bus_components.length == 0)
+	{
+		grand_total1 = 0;
+	}
+	if(frm.doc.bus_components.length >= 1)
+	{
+	for(var i=0;i<frm.doc.bus_components.length;i++) {
+		if( frm.doc.bus_components[i].amount > 0){
+			grand_total1 += frm.doc.bus_components[i].amount;
+		}
+		else{
+			grand_total1 = 0;
+		}
+	}
+	}
+	grand_total = grand_total0 + grand_total1;
+	console.log(grand_total)
+	frm.set_value("grand_total", grand_total);
+}
+
+frappe.ui.form.on("Bus Component", {
+	amount: function(frm) {
+		frm.trigger("calculate_total_amount");
+	}
+});
+```
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 12-May-2022**
+<h3 align='center'>Make changes for in fee files to save data at backend</h3>
+
+- First write code in api.py file create whitelist() where we use condition if bus component available.
+- Then use it in Javascript file as function where we call api.py and sending data field data to function.
+- Now in fee.py we calculate the bus component in loop and send grand total in database throught which we succesfully generate receipt with correct calculations.
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 13-May-2022**
+<h3 align='center'>Understand the Salary Structure of different employees</h3>
+
+- We are going to Accounts Department for understanding Salary structure of different employees.
+- Understand their requirement related to salary like for different employee, there should be different grade pay.
+- So they want they have customize option to add grade pay or not.
+- They want also seprate record file for provident fund record of employees, provident fund loan record file.
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 14-May-2022**
+<h3 align='center'>Learning Salary Component for New Requirement</h3>
+
+- First when we change our company from NSPS to GNDEC.
+- Then all the Salary Components of employee are visisble in Salary Components but are not shown in Salary structure.
+- After that we are finding some other solution so that we can use same structure in two companies. 
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 16-May-2022**
+<h3 align='center'>Creating Salary Component</h3>
+
+- According to new requirement different category employees have different components.
+- Now same salary component can have different value for two employees like SML for accounts employee and teaching employee are different.
+- We are creating all Salary Components without any value so that we can modifying it later in Salary Structure.
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 17-May-2022**
+<h3 align='center'>Creating Salary Structure</h3>
+
+- After Creating all Salary components which are combined for all the employees.
+- Now we are creating Salary Structure which is the combination of Salary Components in which we list all Earning and deduction components.
+- In this we set formula that if basic pay is assigned to employee during the assignment of Salary Structure and Grade pay is added to employee when generating Salary Slip only then all the Earning and deduction components are calculated.
+- The calculation is done when we save the salary slip in draft state after submit we can't modify it but in draft state we can made any changes at any time like adding or deleting components.
 <br>
  
  
