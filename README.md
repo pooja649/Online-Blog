@@ -417,39 +417,33 @@ For every new Chat that has been opened in the system, a Chat Room gets created.
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 1-Apr-2022**
-## Working with Client Script in Form
-- Client Script is script in which we add some action on form so that we validate data or do other function.
-- Webform script is which is done in webform while creating new webform.
-- For Reference we use Web form Scripting Documentation [Click here](https://frappeframework.com/docs/v13/user/en/api/form) 
+## Reading the excellent reports by seniors
+<p align='justify'>Today i was reading the three report that was written by our seniors. 1.The above report is based on the language translator in which a group is trying to understand the role of lex and parser. It was really fun to read this report I really enjoyed reading it. The starting of the report, the examples delivered during the presentation, and the question answers during the presentation is really excellent. My favourite part of the report was someone said "You should say, I don't know java rather than I don't like java" and also the chinese part as this is the best way to start and to gather the attention of the audience and to . 2.The above report is based on the regular expressions , in the report they have mentioned the struggles of programmers in the early times as they did not had the laptops and personal computers. 3.This report "An ancient art of secure communication" is based on the encryption and decryption It was really interesting to know how encryption was used in the ancient times the example of "shaving the head of employee" for secure communication was very interesting and the example of kheer and the phrases "Adhi raat da hanera, vich taare hi taare, mere gharo'n oat hoyi." was very intersting.
 
+I really enjoyed reading the above reports.</p>
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 2-Apr-2022**
-## Sending Daily report to Student Group
-- For Sending daily report in student group First we add student and Intructor in student group with batch name.
-- Then we create email group and add students email where we send them email at same time.
-- In Student group on view option we create new newsletter with content and add email group then we are able to send email to group of Student.
- 
+## Naming series According to the company
+-Task to change the naming series of student applicant doctype according to the company abberivation so that we can identify the students of each company(school/college) by looking at their naming series. 
+-There was a solution avialable in the official documentation of erpnext and we tried it but it wasn't working. We also tried some changes but still it wasn't working. After this we were searching for the other solutions and there was a solution available in the discussion forum.
+-We tried it on local machines and it was working perfectly after this we implemented it on gne11.gndec.ac.in
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 5-Apr-2022**
-## Trying to create Daily Daity without using email
-- For this first we create a doctype.
-- Trying to add permission in doctype so that only student group can access these Dairy.
+## Created new web-form and doctype for trainees
+Created a doctype named trainees_details with some fields and after that created a web form based on this doctype. After creating this I gave web view to the doctype and after this added it on the website so that students can fill their personal information.
 
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 6-Apr-2022**
-## Creating Library Management System
-- As per official documentation I create Library Management App.
-- Install app on site then creating doctype.
-- Use Features like Naming Series, Permission Rules.
-- Learn Controller methods, Doctype Features, Form Scripts.
-- Adding Web view for preview Articles on web.
-
+## Enabling chat options for the student users
+-Task to find how we can enable chat options for studnets as they didn't have desk access or chat option. 
+-In order to enable chat access we need to give all the students desk access but very limited. 
+-I gave 2-3 students customer role with the students role then they have desk access and also chat access.
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
