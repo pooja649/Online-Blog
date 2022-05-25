@@ -448,9 +448,8 @@ Created a doctype named trainees_details with some fields and after that created
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 7-Apr-2022**
-## Trying to make pagination and filter on webpage
-- First we are's trying to read built-in frappe file so that we can use it in webpage.
-- Make changes in built in files to apply it on global in frappe.
+## Trying to understand the student leave section
+- Trying to understand the student leave section under education domain of erpnext. I was trying to understand the default workflow of student leave         section, how students will add their leaves and how instructor will get notification of the leaves.
 
 <br>
 
@@ -464,10 +463,9 @@ Created a doctype named trainees_details with some fields and after that created
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 9-Apr-2022**
-## Learning bash script
-- As per Questions Created for Trainee it contain different format.
-- Then I need to create bash script using sed to find and replace the wrong format symbols.
-- The example of sed command is 'sed 's/$ //gI' filename'. 
+## Result creation of students
+- Today I am testing the assesment module, where the result of all the students in coursewise.
+- For that first i have to create assessment plan for each course.Then get the reult of that particular assessment plan. 
 
 <br>
 
@@ -481,11 +479,9 @@ Created a doctype named trainees_details with some fields and after that created
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 12-Apr-2022**
-## Role and  Permission to new Users
-- Allow new users to create Library Management System, need to give them the access of doctype modules.
-- Go to doctype list and create new role where new user create doctype by can’t delete doctype.
-- Similarly for Module we use select permission where user can select module but can’t read module.
-
+## Report Generation of student
+-  In the erpnext education module I was trying to generate report card for students while creating report card I am able to show the courses and exams but    not able to show the marks of students in the report card.
+-  I have assigned the marks to the particular students.
 
 
 <br>
@@ -501,6 +497,12 @@ Created a doctype named trainees_details with some fields and after that created
 
 
 <br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 15-Apr-2022**
+## Presentation of Nankana Sahib Public School Project
+<p align='justify'>Today we all have done the basic setup again for Nankana Sahib Public School for Class 1 to Class 8 and imported students, instructors and enrolled them in programs, courses and assigned instructors to the programs. As it was very difficult for all of us to understand because there were many same enteries of two companies one of Nankana Sahib Public School and another of Guru Nanak Dev Engineering College and there were many enteries that we all have entered for testing purpose. So today we all deleted all the previous enteries to do the setup from scratch. It was very helpful for all of us as there were some doubts of us related to program enrollment , course enrollment and student group.</p>
+
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 16-Apr-2022**
