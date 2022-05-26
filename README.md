@@ -562,25 +562,17 @@ Today I gave presentation to all my mates in which about the Cost Centre in Erpn
 <br>
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 23-Apr-2022**
-<h3 align='center'>Making new specification and Flow for Noticeboard App</h3>
+<h3 align='center'>Desk Customization</h3>
 
-- Notice will be created by CLERK then it will be in draft state.
-- CLERK and HOD can create notice no one else from other department able to create notice for their department.
-- Another requirement when notice is created by clerk It will be in Draft state when Hod Submit Notice only then it would be published.
-- Naming Series of notice maintained department wise eg: Notice-CSE/2022/00001, Notice-CIVIL/2022/00001.
-- If HOD Cancel the notice then Clerk is able to make changes then again send it to HOD.  
+- The task was to customize the desk according to roles and permissions,so a particular user has access to particular tabs like student,instructor,programs   etc. 
+- Now I am giving different permissions one by one  to the user in order to find whether I'm getting the desired result or not.
+
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 25-Apr-2022**
-<h3 align='center'>Creating doctype in Existing Noticeboard App</h3>
-
-- In First approach we decide to use create doctype and apply workflow on it.
-- Where all states are defined like Approve by hod, Draft etc.
-- We allote Department to their Respective Hod and Clerk  So that they are able to create notice.
-- Every thing Works fine but When we apply some code then workflow states create problem. eg data is saved but changes apply with delay.
-- We find workflow also make task for app difficult because its file is not created inside the app that why it portability is difficult.
-- So we decide to work without workflow also learn new things from mistakes.   
+<h3 align='center'>Reading the files of LMS</h3>
+As by using user permissions still instructor was able to see all the programs and courses. To find the solution for this we are trying to understand the structure of lms for this i was reading all the files of lms present in erpnext in the programs and course file it is metioned that by default instructor has access to all the programs and courses. 
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
@@ -597,28 +589,11 @@ Today I gave presentation to all my mates in which about the Cost Centre in Erpn
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 27-Apr-2022**
-<h3 align='center'>Fetching HOD by using variables in query</h3>
+<h3 align='center'>Fee Schedule</h3>
 
-- First we use Simple Frappe query "frappe.db.get_value('User', 'hodcse@gmail.com', 'full_name')".
-- But this depends upon the email of hod if email will change in future then we need to change it.
-- Also we have to wrote this many times.
-- So we use another optimized version of query.
-<br>
+- We set up students on the local system who have siblings when we select option siblings studying in the same school then we are able to select students     from available students but the program is not fetched. Along with this We find the received income cost center is also set in the Fee schedule. We can     find all the income in the Fee cost center.
 
-```py
-department = self.department
-requiredRole = "Hod" 
-		
-		self.hod = frappe.db.sql(f""" select full_name 
-			from `tabUser` 
-			where `email` IN (select user 
-			from `tabUser Permission` 
-			where `for_value`="{department}" AND `user` IN (select parent 
-			from `tabHas Role` 
-			where `role`="{requiredRole}" )) """)
-```
-
-- By using this query with variable we are able to use this for all departments.
+-We were also exploring and creating the roles that others had implemented on gne11.gndec.ac.in. We have created a role and a user for the same role. After  this we gave the user permissions and all the required permissions like read, write. After this we have checked what  is visible to this user and what this role is able to do.
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
@@ -644,41 +619,52 @@ requiredRole = "Hod"
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 30-Apr-2022**
-<h3 align='center'>Try to optimize Notice.py Code</h3>
+<h3 align='center'>Adding Filters on doctype as per requirement</h3>
 
-- As we use department for naming series so for this we have to change code when department and its abbrivation changed.
-- To Remove this we add department abbrivation field in doctype.
-- With following query abbr depends upon the department abbrivation also we haven't make changes in code also code become more simple than previous code. 
-<br>
-
-```py
-department=self.department
-abbr=frappe.db.get_value( 'Department' , department ,'department_abbreviation' )
-self.name=make_autoname( 'NOTICE-' + abbr + '/' + '.YYYY.' + '/' + '.#####' )
+- As per requirement changes for achieve this we add filter in list-view like class-wise, subject-wise, date-wise filter.
+-For creating filters on desk we need to go to Doctype.
+-On click edit we need check option In List View, In Standard Filter.
+-Then on save changes filters are available on desk list-view of doctype. 
 ```
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 2-May-2022**
-<h3 align='center'>Creating Roles and permissions</h3>
+<h3 align='center'>Hackathon day 1</h3>
 
-- Creating Director Role and add permission for Viewing accounts, payroll, Employee details etc.
-- Customize Deskview for Director Role.
-- Creating Principal Role and add all academic views for Principal.
-- Creating Instructor Role and allow all permissions needed to do their tasks.
+Roles and flow for Parent Comapany:-
+
+Director:- Director will have all permissions like fees, salary, accounts , total gain etc but with read only access.
+
+Accountant:- will have permissions to see all the account information of trust, nsps, gndec. Accountant will have read, write access to create the fee and salaries of the employee and also can create the fee report and salary report.
+
+HR:- HR will have permission to create the users and make them employees, leave allocation, holiday list, salary of employee. Superintendent
+
+Roles and flow for Child Comapany:-
+
+Principal:- Will have only read only access to all the education domain related information and HR related information.
+
+Accountants:- 1 For students fee and 1 for salaries of employees. Teaching Incharge:- Will do all the tasks of academic user like course scheduling etc.
+
+HR:- will create employees and instructors only for Nankana sahib Public School, leave allocation, salary of employees etc. We need to show all the reports like employees attendance report, salary report, leave report etc to the HR..
+
+Instructors:- will have access to student attendance, quiz, videos, article, Diary, Student list etc.
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 3-May-2022**
-<h3 align='center'>Learn Different Salary component for Employee Salary</h3>
+<h3 align='center'>Hackathon day 2</h3>
 
-- Basic Pay of employee as per college pay scale.
-- Add 5% Interim Relief in Basic pay.
-- Adding Dearness allowance 142% in Basic Pay.
-- Medical Allowance,CCA,PF(10%),HRA.
-- These all are Earning in salary.
-- Then we add Deduction component like PF(20%),Development tax, GI, SML, SMAF.
-- By calculating all Earning & Deduction, we get Net Paid Amount. 
+Students:- will have access of only LMS and on lms they will have access of programs, Courses, Quizzes, Videos, Articles, daily diary and attendance.
+
+Accountant:- will create the salaries of employees and fees of students, will generate the balance sheet.
+
+We need to generate all the reports and graphs for necessary information for each role.
+
+Inventory Management
+
+Today, We created Director user of NSET, Superintendent of NSET, Principal user of NSPS and HR user of NSPS on erp server and gave them all the required permissions. And same roles are created on gne11.GNE, whose credentials are shared in other mail. You can check that roles with given credentials. Also we learn about Salary Structure and Salary Component of employees. In meeting with Harpreet sir, we learn about PF, Taxes, Funds, Earnings and Deductions etc. We will explore it and implement on gne11.GNE.
+
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
