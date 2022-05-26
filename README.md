@@ -781,52 +781,9 @@ def example():
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 11-May-2022**
-<h3 align='center'>Adding bus Fee in Fee doctype of erpNext</h3>
+<h3 align='center'>Transportation Module in Fee</h3>
 
-- By default we have Fee component in which all fee categories are fetched but as per our requirement we need to add bus fee which is different for each student.
-- For which First we create two doctype one in which Route detail with Fees is stored and second is child doctype called Bus component which is fetched in Fee doctype.
-- Then Apply changes in Bus component like fetch value from Route detail doctype.
-- For calculating total bus component and fee component we have to write some code in fee.js file.
-
-```js
-calculate_total_amount: function(frm) {
-	var grand_total0 = 0, grand_total1 = 0, grand_total = 0;
-
-	for(var i=0;i<frm.doc.components.length;i++) {
-		if( frm.doc.components[i].amount >= 0){
-			grand_total0 += frm.doc.components[i].amount;
-		}
-		else{
-			grand_total0 = 0;
-		}
-	}
-
-	if(frm.doc.bus_components.length == 0)
-	{
-		grand_total1 = 0;
-	}
-	if(frm.doc.bus_components.length >= 1)
-	{
-	for(var i=0;i<frm.doc.bus_components.length;i++) {
-		if( frm.doc.bus_components[i].amount > 0){
-			grand_total1 += frm.doc.bus_components[i].amount;
-		}
-		else{
-			grand_total1 = 0;
-		}
-	}
-	}
-	grand_total = grand_total0 + grand_total1;
-	console.log(grand_total)
-	frm.set_value("grand_total", grand_total);
-}
-
-frappe.ui.form.on("Bus Component", {
-	amount: function(frm) {
-		frm.trigger("calculate_total_amount");
-	}
-});
-```
+- We are trying to add the transportation fee in the fee module so the students who were travelling through the institute transportation 
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
