@@ -617,16 +617,6 @@ As by using user permissions still instructor was able to see all the programs a
 - Along with this We find the received income cost center is also set in schedule. We can find all the income in the Fee cost center.
 <br>
 
-<!----------------------------------------------------------------------------------------------------------------------------->
-**Date : 30-Apr-2022**
-<h3 align='center'>Adding Filters on doctype as per requirement</h3>
-
-- As per requirement changes for achieve this we add filter in list-view like class-wise, subject-wise, date-wise filter.
--For creating filters on desk we need to go to Doctype.
--On click edit we need check option In List View, In Standard Filter.
--Then on save changes filters are available on desk list-view of doctype. 
-```
-<br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 2-May-2022**
@@ -668,115 +658,42 @@ Today, We created Director user of NSET, Superintendent of NSET, Principal user 
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
-**Date : 4-May-2022**
-<h3 align='center'>Creating Salaries</h3>
-
-- First we create salary component which are fixed these are declared in Salary Component.
-- Next Create Salary Structure in which we group all Salary Component which are earning and deduction components.
-- Setting up formula on Basic Pay like calculate IR(5%), ADA(142%) etc.
-- After Successfully creating salary structure assigning it to employee where we define the Basic pay of Employee.
-- At last in Salary Slip we select employee to whom we assign salary then salary structure automatically fetched and calculate base salary.    
-<br>
-
-<!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 5-May-2022**
 <h3 align='center'>Creating Presentation with Other Team-mates in Reveal.JS</h3>
 
-- Review all work which is done by us.
-- Creating presentation add all Salary Components required.
-- Add how Desk is visible for different Roles.
-- What is visible to all student.
-- Explaing other modules like Accounts, Assets, Payroll, Human Resource, Education Domain.
+Created Presentation for the Whole Project To so that we can present our work to the trusties so with the team we created a presentation whcih contains all the infomation related to the erp Syatem which deals with the all kind of accounting, maintaing all students,staff and employees and pushed on github. 
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 6-May-2022**
-<h3 align='center'>Working on Mentor-Mentee Task without erpnext</h3>
+<h3 align='center'>Understanding the fee structure</h3>
 
-- Creating new database in which three tables Mentor, Mentee & Relation.
-- Import data in these tables using csv files through terminal.
-- Make connection of database with python file.
+- Implementing the fee module on local host to understand the fee structure. 
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 7-May-2022**
-<h3 align='center'>Install and use Flask</h3>
+<h3 align='center'>ICreating fee structure for NSPS</h3>
 
-- As we need to show detail on webpage using jinja templating.
-- After few searches we decide to use flask as a framework which render jinja template for html file.
-- Again Make connection with database, but this time as adviced by teacher. we need to hide credential from public so that we push it on git.
-- For hiding credentials we load details from another python file.
-- Write basic hello world program and render it using jinja templating.
+- Added fee structures for all classes in NSPS and also added new programs with respect to NSPS fee structure.
+- Added fee structure for all the classes from Nursery to 12th.
+
 <br>
 
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 9-May-2022**
-<h3 align='center'>Showing detail in html file using jinja</h3>
-
-- Creating a templates folder inside flask app where all the html files put together
-- Make a funtion in which we put query select Mentor name from mentor table.
-- Then render template with data and file name in which template is shown
-```py
-@app.route('/')
-def example():
-    cur.execute("SELECT Name FROM Mentor")
-    data = cur.fetchall()
-    return render_template('index.html', output = data)
-```
-- cur.execute is used for query and cur.fetchall() fetch all names from mentor table.
-- And at the end funtion return render template in which filename, and assign data to output variable.
+<h3 align='center'>New requirements for fee structure</h3>
+-Task given to add discounts in the fees of student on the basis of siblings. 
+-Trying to understand the logic. 
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 10-May-2022**
-<h3 align='center'>Showing Data on Webpage with Jinja and Bootstrap code</h3>
+<h3 align='center'>Exploring HR module in erpnext</h3>
 
-- Jinja template code for showing data on webpage. 
-- In the below code under block content section we run a loop which fetch data from flask app.
-- row[0] is used for show data without braces.
-- jinja template code with Bootstrap
-
-```jinja
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <div class="container">
-    <table class="table">
-      <thead class="thead-dark">
-        <tr>
-          <th scope="col">Mentor Name</th>
-          <th scope="col">Mentee Name</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr rowspan="4">
-          <td class="border">{{ mentor }}</td>          
-          <td class="border">
-          {% for row in output1 %}         
-            {{ row[0] }}              
-            <br>
-          {% endfor %}
-        </td>
-        </tr>
-        
-        </tbody>
-      </table>
-    </div>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
-</html>
-```
+- Working on HR module first we need to create new employees.
+- Fill the details related to employees like educational qualification, designation, personal details, salary details, joining details, etc.
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
@@ -788,11 +705,11 @@ def example():
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 12-May-2022**
-<h3 align='center'>Make changes for in fee files to save data at backend</h3>
+<h3 align='center'>Buying Module in ErpNext</h3>
 
-- First write code in api.py file create whitelist() where we use condition if bus component available.
-- Then use it in Javascript file as function where we call api.py and sending data field data to function.
-- Now in fee.py we calculate the bus component in loop and send grand total in database throught which we succesfully generate receipt with correct calculations.
+- Buying the right quantities in right amounts can affect your cash flow and profitability positively. ERPNext contains a set of transactions that will       make your buying process as efficient and seamless as possible
+- Purchase Order can be created directly, or by fetching data from Material Request or Supplier Quotation. When ordered items are received from Supplier,     Purchase Receipt is created against Purchase Order.
+- setting up masters required for creating Customer and Supplier like Customer Group, Territory and Supplier Group.
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
