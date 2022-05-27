@@ -749,6 +749,77 @@ Created Presentation for the Whole Project To so that we can present our work to
 - In this we set formula that if basic pay is assigned to employee during the assignment of Salary Structure and Grade pay is added to employee when generating Salary Slip only then all the Earning and deduction components are calculated.
 - The calculation is done when we save the salary slip in draft state after submit we can't modify it but in draft state we can made any changes at any time like adding or deleting components.
 <br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 18-May-2022**
+<h3 align='center'>Display General ledger entry for Fee Record</h3>
+
+- Goto Accounting Module then goto General Ledger section.
+- Select your Company, Select from date, to date for which you want to show Entries.
+- Select Group by Account, Group by Party, Group by Voucher view.
+- Now you are able to view all the record here you have all debit, credit and balance record.
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 19-May-2022**
+<h3 align='center'>Collecting Fees in one Fee Cost Center</h3>
+
+- For creating new Fee collection head Create new Account.
+- Add account name, Select Company name, Currency type.
+- Select Balance type (Debit or Credit), Select Parent account type (Income account or Expenses account).
+- After Creating head verify it in Company Cost center, while creating new Fee slip under Accounting Section select income account in which you want to add new fees.
+
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 21-May-2022**
+<h3 align='center'>Displaying Fees different head-wise like tution fee, Development fee</h3>
+
+- Goto Fee list under Education domain.
+- Under list view option select report view, Select Add group option here select Fee Category under Fee Component
+- Then Add sum Filter and in third field Select Amount or grand total or outstanding.
+- Now you are able to see all fee collected head wise like Tution Fee, Development Fee, Bus Fee.
+
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 23-May-2022**
+<h3 align='center'>Generating School Leaving Certificate</h3>
+
+For creating new school leaving certificate format goto print format. For Adding new print format select student doctype for which you want to create school leaving certificate, Select education module select format as standard format or not we use ‘NO’ option because this format is only used when we want to generate school leaving certificate. Use custom css for designing logo of company for fetching student name we use doc.first_name. For fetching class name we use frappe function, frappe.db.get_value(‘Program Enrollment’, doc.student, ‘program’).
+
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 24-May-2022**
+<h3 align='center'>Sending Messages to specific Students using ERPNext</h3>
+- Creating New Email Group Add Subscribers to whom we want to send emails.
+- We can them in a bluk by writing their emails.
+- After adding subscriber Create New newsletter in which we have to add email group which is created.
+- Then add Subject and Message also we have option to test this message by sending to only one specific user.
+- Save the newsletter we have another option schedule sending mail automatically.
+
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 25-May-2022**
+<h3 align='center'>Creating Collapse view without using ErpNext Desk using Bootstrap</h3>
+- First we create collapse multiple tab effect with bootstrap and html.
+- In which we use bootstrap classes with html tags.
+- Then our next task is to put in erpnext directory and run it with jinja templating.
+- For this we remove all html starting tags and bootstrap cdn links because frappe also uses Bootstrap-4 classes.
+- Replace Html starting tags with jinja starting template and trying to fetch data from database.
+
+<br>
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+**Date : 26-May-2022**
+<h3 align='center'>Automation of Fee Creation of the Students</h3>
+- Once we created the fee of teh student for a single month now we have a problem is that we have to repeat the task again for every month so we need to     automate this process in order to provide the clean and efficient approach.So we automate this process with auto-repeat tool and makes evry student fee     on repeat once it created. It will automatically created after every month and we set the due date 15 days ahed of the date of creation of the fee so the   status of the fee will be changes to overdue after due date.
+
+<br>
+
+
  
  
 
