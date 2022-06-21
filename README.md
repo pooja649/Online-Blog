@@ -933,7 +933,7 @@ frappe.listview_settings["Student"] = {
 **Date : 30-May-2022**
 ## Desk Theme
 
-- Sir assigned us (Me and Jaspreet) the task to beautify the desk view with bootstrap. So we are exploring about it.
+- Sir assigned us the task to beautify the desk view with bootstrap. So we are exploring about it.
 - We found theme of desk. We install a theme from this url: https://github.com/hashirluv/r
 - After installing this theme, colour of heading, navigation bar etc got changed.
 - Then we tried some other themes also. We tried White Theme, Blue Theme etc.
