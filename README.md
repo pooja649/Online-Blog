@@ -793,6 +793,7 @@ For creating new school leaving certificate format goto print format. For Adding
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 24-May-2022**
 <h3 align='center'>Sending Messages to specific Students using ErpGuru</h3>
+
 - Creating New Email Group Add Subscribers to whom we want to send emails.
 - We can them in a bluk by writing their emails.
 - After adding subscriber Create New newsletter in which we have to add email group which is created.
@@ -804,6 +805,7 @@ For creating new school leaving certificate format goto print format. For Adding
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 25-May-2022**
 <h3 align='center'>Creating Collapse view without using ErpGuru Desk using Bootstrap</h3>
+
 - First we create collapse multiple tab effect with bootstrap and html.
 - In which we use bootstrap classes with html tags.
 - Then our next task is to put in ErpGuru directory and run it with jinja templating.
@@ -815,7 +817,8 @@ For creating new school leaving certificate format goto print format. For Adding
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 26-May-2022**
 <h3 align='center'>Automation of Fee Creation of the Students</h3>
-- Once we created the fee of teh student for a single month now we have a problem is that we have to repeat the task again for every month so we need to     automate this process in order to provide the clean and efficient approach.So we automate this process with auto-repeat tool and makes evry student fee     on repeat once it created. It will automatically created after every month and we set the due date 15 days ahed of the date of creation of the fee so the   status of the fee will be changes to overdue after due date.
+
+Once we created the fee of teh student for a single month now we have a problem is that we have to repeat the task again for every month so we need to     automate this process in order to provide the clean and efficient approach.So we automate this process with auto-repeat tool and makes evry student fee     on repeat once it created. It will automatically created after every month and we set the due date 15 days ahed of the date of creation of the fee so the   status of the fee will be changes to overdue after due date.
 
 <br>
 
