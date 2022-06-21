@@ -1,5 +1,6 @@
 # Daily Online Blog
-Date : 1-Feb-2022 
+
+**Date : 1-Feb-2022** 
 ## Introduction to Linux Installation
 
 - Download the linux distribution of your choice.
@@ -8,31 +9,30 @@ Date : 1-Feb-2022
 - Select your boot device
 - [link](https://www.wikihow.com/Install-Linux) 
 
-Date: 2-Feb-2022
+**Date: 2-Feb-2022**
 ## Introduction to Linux Installation
 
 - The LAMP stack is a popular open-source solution stack used primarily in web development.
-
 - LAMP consists of four components necessary to establish a fully functional web development environment. The first letters of the components' names make up the   LAMP acronym:
    . Linux is an operating system used to run the rest of the components.
    . Apache HTTP Server is a web server software used to serve static web pages.
    . MySQL is a relational database management system used for creating and managing web databases, but also for data warehousing, application logging, e-commerce, etc.
    . PHP, Perl, and Python are programming languages are used to create web applications.
 
-Date: 3-Feb-2022
+**Date: 3-Feb-2022**
 ## Run Cgi Script
 
 - The Common Gateway Interface, or CGI, is a set of standards that define how information is exchanged between the web server and a custom script. The CGI specs are currently maintained by the NCSA.
 - The Common Gateway Interface, or CGI, is a standard for external gateway programs to interface with information servers such as HTTP servers.
- . Create a cgi scirpt.
- . Run it on Localhost using Apache Server.
+- Create a cgi scirpt.
+- Run it on Localhost using Apache Server.
  
-Date: 4-Feb-2022
+**Date: 4-Feb-2022**
 ## Image to video
 
 - To write a script throungh which images be converted into video
 
-Date: 5-Feb-2022
+**Date: 5-Feb-2022**
 ## Introduction to frappe
 
 - Frappe, pronounced fra-pay, is a full stack, batteries-included, web framework written in Python and Javascript with MariaDB as the database. It is the framework which powers ErpGuru, is pretty generic and can be used to build database driven apps.
@@ -40,7 +40,7 @@ Date: 5-Feb-2022
 
 The key difference in Frappe compared to other frameworks is that meta-data is also treated as data. This enables you to build front-ends very easily. We believe in a monolithic architecture, so Frappe comes with almost everything you need to build a modern web application. It has a full featured Admin UI called the Desk that handles forms, navigation, lists, menus, permissions, file attachment and much more out of the box.
 
- Date: 7-Feb-2022  
+**Date: 7-Feb-2022**  
  ## Creating Site and App & run on local server in Frappe
  
  - Open the Terminal and start bench.
@@ -82,12 +82,14 @@ time.</p>
 
 **What is Virtual Machine?**
 <p align="justify">A Virtual Machine (VM) is a compute resource that uses software instead of a physical computer to run programs and deploy apps. One or more virtual “guest” machines run on a physical “host” machine.  Each virtual machine runs its own operating system and functions separately from the other VMs, even when they are all running on the same host. This means that, for example, a virtual MacOS virtual machine can run on a physical PC.</p>
+
 - It can start only a single VM on a VMX.
 - It can run only a limited number of VMs on a system.
 <br>
 
 **What is ErpGuru?**
 <p align="justify">ErpGuru is a full-featured business management solution that helps SMEs to record all their business transactions in a single system. With ErpGuru, SMEs can make informed, fact-based, timely decisions to remain ahead in the competition. It serves as the backbone of a business adding strength, transparency, and control to your growing enterprise.</p>
+
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
@@ -104,6 +106,7 @@ time.</p>
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 12-Feb-2022** 
 ## Introduction to Selenium, Budibase, Coding standard for program
+
 - Selenium is browser automation tool by which you can create a script which automatically done task like fill credential and click for search.
 - Budibase is a development platform designed for speed and productivity. 
 - <p align="justify">With Budibase, developers no-longer experience repetition, long-dev cycles, and frustration. Instead, developers are more productive, happier, and can deliver applications they're proud of in minutes.</p>
@@ -114,6 +117,7 @@ time.</p>
 **Date : 14-Feb-2022** 
 ## Try to Solve error redis-server during Installation
 **error while loading shared libraries: libatomic.so.1: cannot open shared object file: No such file or directory**
+
 - sudo apt purge libatomic1.
 - install houncho  if file is missing.
 
@@ -122,6 +126,7 @@ time.</p>
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 15-Feb-2022** 
 ## Introduction to Education module in ErpGuru
+
 <p align="justify">The Education domain in ErpGuru is designed to meet requirements of any organization which imparts knowledge and believe in doing so in an organized fashion. It has already been used at schools, colleges and even in private firms.
 It helps you to effectively manage administration and allows you to focus on what is most important for your institute, to educate!</p>
 <br>
@@ -129,15 +134,15 @@ It helps you to effectively manage administration and allows you to focus on wha
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 17-Feb-2022** 
 ## Testing Slides2Video script
-<p align='justify'>Testing the Slides2Video script in Windows by following the documentations provided by the creator, taking diffrent images of diffrent sizes and of different resolutions and provided different captions and diffrent stuff.
-
+<p align='justify'>Testing the Slides2Video script in Windows by following the documentations provided by the creator, taking diffrent images of diffrent sizes and of different resolutions and provided different captions and diffrent stuff.</p>
+<br>
+	
 <!----------------------------------------------------------------------------------------------------------------------------->
-**Date : 18-Feb-2022** 
+**Date : 18-Feb-2022**
 ## Docker Vs Virtual Machine
+
 - Docker is popular virtualization software that helps its users in developing, deploying, monitoring, and running applications in a Docker Container with all their dependencies. Docker containers include all dependencies (frameworks, libraries, etc.) to run an application in an efficient and bug-free manner.
 - A virtual machine (VM) is a computing environment or software that aids developers to access an operating system via a physical machine.
-
-
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
@@ -153,39 +158,38 @@ It helps you to effectively manage administration and allows you to focus on wha
   - The efficiency of Docker containers relative to VMs makes Docker a handy option for teams that want to reduce how much they spend on infrastructure. By 
     taking applications running in VMs and redeploying them with Docker, organizations will likely reduce their total resource consumption.
 
-
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 21-Feb-2022** 
 ## Role / use of mosh and tmux in our workflow?
 Role/Use of Mosh-
--the ability to reconnect after sleeping/hibernating whatever local host I’m on, or roaming between different wifi networks.
--some basic persistence, so my foreground processes don’t die if my local host loses connection.
+
+- the ability to reconnect after sleeping/hibernating whatever local host I’m on, or roaming between different wifi networks.
+- some basic persistence, so my foreground processes don’t die if my local host loses connection.
 
 Role of Tmux-
--enables a number of terminals to be created, accessed, and controlled from a single screen.
+
+- enables a number of terminals to be created, accessed, and controlled from a single screen.
 - tmux may be detached from a screen and continue running in the background, then later reattached.
-
-
 
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 22-Feb-2022** 
 ## Comparison between ErpGuru 12 and 13 version
--The major difference is the UI interaction. In ErpGuru 13 the UI design is very user friendly as compared to ErpGuru 12 version,
+
+- The major difference is the UI interaction. In ErpGuru 13 the UI design is very user friendly as compared to ErpGuru 12 version,
 - In the 13 version , we have access to different themes well , this feature is not available in the 12 version.
 - In ErpGuru 12 version we have to manually set up the domains which is time consuming while on the other hand in 13 version it give us pre-processed         domains with very clean UI which makes it simpler.
 - In version 13 while setting up it automatically created a blog/webpage for the user and in version 12 this is missing or we can manually create it .
-
-
 <br>
 
 	
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 23-Feb-2022** 
 ## Education module in ErpGuru version 12 and 13
+
 - Studied about the education module of both the version.
 - Various fields and diffrences of user interface in both the versions. 
 
@@ -194,6 +198,7 @@ Role of Tmux-
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 24-Feb-2022** 
 ## Course Schedule in ErpGuru
+
 - Course Schedule can be used for scheduling a particular course by an Instructor.
 - Create a new Course Schedule from the Schedule Calendar.Select the Student Group for which you want to create the Course Schedule.
 - Select the Instructor who will be tutoring the students for the course.Select the Course for which the schedule is being prepared.
@@ -204,6 +209,7 @@ Role of Tmux-
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 25-Feb-2022** 
 ## Scheduling Tool to create Course Schedule
+
 - Select Student Group for which you need to create Course Schedules.Select Course, Room and Instructor for Course Schedules.
 - Add different fields and click on the 'Schedule Course' button.
 - If you wish to reschedule Course Schedules created against a Course, Check the 'Reschedule' checkbox and then click 'Schedule Course' button.
@@ -213,6 +219,7 @@ Role of Tmux-
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 28-Feb-2022** 
 ## Introduction to Jinja Templating
+
 - A Jinja template is simply a text file. Jinja can generate any text-based format (HTML, XML, CSV, LaTeX, etc.). A Jinja template doesn’t need to have a     specific extension: .html, .xml, or any other extension is just fine.
 - A template contains variables and/or expressions, which get replaced with values when a template is rendered; and tags, which control the logic of the     template. The template syntax is heavily inspired by Django and Python.
 
@@ -221,6 +228,7 @@ Role of Tmux-
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date :01-Mar-2022**
 ## Chat in ErpGuru
+
 - The Chat room is a tool, which allows you to send and receive messages to other Users within your ErpGuru account.
 - To start a Chat, you can click on the Chat icon on the Desk. When you do this, a Chatbox will Pop Up, which will have a list of all the Users you have     been chatting with. 
 
@@ -236,14 +244,16 @@ For every new Chat that has been opened in the system, a Chat Room gets created.
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 4-Mar-2022** 
 ## Chat Profile Report
--This report shall show you a list of all the active profiles in your ErpGuru account with whom you can start a chat.
--To start a new chat, simply type the name of the User in the search bar of chatbox and start communicating.
+
+- This report shall show you a list of all the active profiles in your ErpGuru account with whom you can start a chat.
+- To start a new chat, simply type the name of the User in the search bar of chatbox and start communicating.
 
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 5-Mar-2022** 
 ## Creating own Noticeboard app
+
 - First create App and install it on website.
 - Create Doctype according to structure discussed in team.
 - Provide it web view.
@@ -253,6 +263,7 @@ For every new Chat that has been opened in the system, a Chat Room gets created.
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 7-Mar-2022** 
 ## Customize Noticeboard app
+
 - Writing code to show correct date format eg. March 7, 2022.
 - Writing code to show the name of user who upload the notice.
 - Making its view user friendly in form and webpage both.
@@ -262,6 +273,7 @@ For every new Chat that has been opened in the system, a Chat Room gets created.
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 8-Mar-2022** 
 ## Assesssment  in Education Domain
+
 - Implemented the assessment module in gne11.gndec.ac.in. First created Assessment Creteria .
 - Assessment criteria can be used while scheduling assessment plan for student group and course. Then next, I have created Assessment group tree             (hierarchy for examination conducted in school) for one batch i.e 2021-2022.
 - Next I created Assessment plan which is schedule to conduct the examination/assessment of a particular course for a group of students in an on-going       academic term. 
@@ -271,6 +283,7 @@ For every new Chat that has been opened in the system, a Chat Room gets created.
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 9-Mar-2022** 
 ## Setup of Assessment Module 
+
 - I have created grading scale and assessment result as following: Grading Scale Grading scale define the threshold for the different grades obtained by     the students, based on their scores in the assessment. 
 - For example , I have created grading scale of Students obtaining a score of 100% would be graded as O, students obtaining a score of 80% and below would   be graded A- and so on. 
 
@@ -280,6 +293,7 @@ For every new Chat that has been opened in the system, a Chat Room gets created.
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 11-Mar-2022** 
 ## Student Admission 
+
 - Registered the students via form and by using csv files to import data.
 - After importing or registration via form,need to approve or reject the applications of students for admission. 
 - Then I approve the applications of all the students, after approval I have enrolled the applications to the respective programs.
@@ -289,6 +303,7 @@ For every new Chat that has been opened in the system, a Chat Room gets created.
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 12-Mar-2022** 
 ## Next steps in Student Admission
+
 - After enrollment in the programs, need to enroll students in courses.
 - Then I created sample courses for specific standard and enrolled the students into the respective courses.
 - After enrollment in the courses, assigned the instructor to the students.
@@ -298,6 +313,7 @@ For every new Chat that has been opened in the system, a Chat Room gets created.
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 14-Mar-2022** 
 ## Learning about Fee Module in ErpGuru
+
 - Here I get details how to create new fees for student.
 - Learning Different prerequisites before creating new fees.
 - Like Student, Fee Category, Fee Structure etc.
@@ -307,6 +323,7 @@ For every new Chat that has been opened in the system, a Chat Room gets created.
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 15-Mar-2022** 
 ## Creating Fees in ErpGuru on server
+
 - Creating Different Fees Categories available in school like Tution Fee, Hostle Fee etc.
 - Searching how to add bus fees based on their route.
 - Creating student, Enroll them in a program, Creating courses etc. 
@@ -323,16 +340,17 @@ For every new Chat that has been opened in the system, a Chat Room gets created.
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 17-Mar-2022** 
 ## Define Socket.IO
+
 - Socket.IO provides bidirectional, event-driven communication capabilities for use in real time applications.
 - It consists of a client-side browser library and a server-side Node.js library, both of which use similar syntax to enable an easily scriptable interface   for developers.
 - The primary function of Socket.IO is to act as an abstraction layer for existing real-time protocols.
-
 
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 19-Mar-2022** 
 ## Need to bother about Socket.IO
+
 - Socket.IO may make things a bit easier for sure; we don’t have to worry about load balancer-related issues, connection failures, and message               broadcasting…
 - Socket.IO can fall back to technologies other than WebSockets when the client doesn’t support i
 
@@ -348,6 +366,7 @@ For every new Chat that has been opened in the system, a Chat Room gets created.
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 22-Mar-2022** 
 ## Setting up the Masters for Learning Management System
+
 - Programs:To make the Program accessible on the portal, tick the 'Is Published' checkbox in the Program form.The portal will automatically fetch the         courses from the course table in the program.
 - Portal Settings:On the portal, for students to be able to view the programs on the portal, a program has to be marked as Published. On the portal           students will be able to see only those courses they are enrolled to or they are allowed to enroll into.
   If 'Allow Self Enroll' is not checked, the program will be visible to only those students who are already enrolled in the program, this way you can host   private programs on your portal.
@@ -356,6 +375,7 @@ For every new Chat that has been opened in the system, a Chat Room gets created.
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 23-Mar-2022** 
 ## Installing new ErpGuru on server
+
 - First we install frappe framework then install ErpGuru with education domain.
 - After this we are collecting students and teachers data from Nankana Sahib Public School.
 - Arranging data according to doctype in ErpGuru.  
@@ -365,6 +385,7 @@ For every new Chat that has been opened in the system, a Chat Room gets created.
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 24-Mar-2022**
 ## Arranging Student data
+
 - As there are large data of students in school we need to make it correct.
 - so we all divide work in team and understanding the concept of filter, concatinate etc. in excel.
 
@@ -373,15 +394,16 @@ For every new Chat that has been opened in the system, a Chat Room gets created.
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 25-Mar-2022** 
 ## Presentation on Library Management System
+
 - I gave presentation of Library Management System to the rest of the trainees. 
 - I have explained that how to create site, app, different doctypes, controller methods and different doctype features.
-
 
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 26-Mar-2022** 
 ## Arranging Teachers Data
+
 - To arrange the data in proper sequence order as there is huge amount of teachers data.
 - Arrange the Teacher's data according to name and email id's in proper sequence order.
 
@@ -391,6 +413,7 @@ For every new Chat that has been opened in the system, a Chat Room gets created.
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 28-Mar-2022** 
 ## Suuccessfully imported users and employees from .csv file
+
 - First, sorted all the data according to the need in a separate file. After that created another file to import the users with username and password. 
 - Then successfully imported all the employees with another file using data import tool. For this needed the user id of all the users so exported all the     user id's of user and added in the employees file.
  
@@ -400,6 +423,7 @@ For every new Chat that has been opened in the system, a Chat Room gets created.
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 29-Mar-2022**
 ## Assigning course to an instructor
+
 - A course can be considered as a subject or a part of an educational program which is to be taught for a term.
 - Go to Course List and click on New, Enter the Course Name. Select the Department under which this course is being made.
 
@@ -409,6 +433,7 @@ For every new Chat that has been opened in the system, a Chat Room gets created.
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 30-Mar-2022**
 ## Adding New role and Give Permission to new Users
+
 - When we got new user for allow them to create Library Management System we need to give them the access of doctype modules.
 - For this we go to doctype list and create new role where new user create doctype by can't delete doctype.
 - Similarly for Module we use select permission where user can select module but can't read module.
@@ -426,9 +451,10 @@ I really enjoyed reading the above reports.</p>
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 2-Apr-2022**
 ## Naming series According to the company
--Task to change the naming series of student applicant doctype according to the company abberivation so that we can identify the students of each company(school/college) by looking at their naming series. 
--There was a solution avialable in the official documentation of ErpGuru and we tried it but it wasn't working. We also tried some changes but still it wasn't working. After this we were searching for the other solutions and there was a solution available in the discussion forum.
--We tried it on local machines and it was working perfectly after this we implemented it on gne11.gndec.ac.in
+
+- Task to change the naming series of student applicant doctype according to the company abberivation so that we can identify the students of each company(school/college) by looking at their naming series. 
+- There was a solution avialable in the official documentation of ErpGuru and we tried it but it wasn't working. We also tried some changes but still it wasn't working. After this we were searching for the other solutions and there was a solution available in the discussion forum.
+- We tried it on local machines and it was working perfectly after this we implemented it on gne11.gndec.ac.in
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
@@ -441,14 +467,16 @@ Created a doctype named trainees_details with some fields and after that created
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 6-Apr-2022**
 ## Enabling chat options for the student users
--Task to find how we can enable chat options for studnets as they didn't have desk access or chat option. 
--In order to enable chat access we need to give all the students desk access but very limited. 
--I gave 2-3 students customer role with the students role then they have desk access and also chat access.
+
+- Task to find how we can enable chat options for studnets as they didn't have desk access or chat option. 
+- In order to enable chat access we need to give all the students desk access but very limited. 
+- I gave 2-3 students customer role with the students role then they have desk access and also chat access.
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 7-Apr-2022**
 ## Trying to understand the student leave section
+
 - Trying to understand the student leave section under education domain of ErpGuru. I was trying to understand the default workflow of student leave         section, how students will add their leaves and how instructor will get notification of the leaves.
 
 <br>
@@ -456,6 +484,7 @@ Created a doctype named trainees_details with some fields and after that created
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 8-Apr-2022**
 ## Making Questions based on Library Management Tutorial
+
 - The Topics for preparing questions for trainee are Creating Apps, Sites & Doctype.
 - Making mcq question's based on steps followed when creating Library management system.
 
@@ -464,6 +493,7 @@ Created a doctype named trainees_details with some fields and after that created
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 9-Apr-2022**
 ## Result creation of students
+
 - Today I am testing the assesment module, where the result of all the students in coursewise.
 - For that first i have to create assessment plan for each course.Then get the reult of that particular assessment plan. 
 
@@ -480,6 +510,7 @@ Created a doctype named trainees_details with some fields and after that created
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 12-Apr-2022**
 ## Report Generation of student
+
 -  In the ErpGuru education module I was trying to generate report card for students while creating report card I am able to show the courses and exams but    not able to show the marks of students in the report card.
 -  I have assigned the marks to the particular students.
 
@@ -494,8 +525,6 @@ Created a doctype named trainees_details with some fields and after that created
 - To enable chat access we need to give all the students desk access but very limited
 - Give 2-3 students customer role with the students role then they have desk access and also chat access.
 
-
-
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
@@ -507,6 +536,7 @@ Created a doctype named trainees_details with some fields and after that created
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 16-Apr-2022**
 ## Cost Center at gne11.gndec.ac.in
+
 - A Cost Center is a part of an organization where costs or income can be charged
 - A Cost Center acts like an Accounting Dimension which helps you track costing based on particular areas for a particular company.
 - For example-we want to track the sales, purchases, expenses and profit net worth, we can add different nodes of cost center for a particular field.
@@ -518,6 +548,7 @@ Created a doctype named trainees_details with some fields and after that created
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 18-Apr-2022**
 ## Permissions in Frappe/ErpGuru
+
 - User Permissions are used to limit users to specific records. Setup> User Permissions
 - Select Document Types to set which User Permissions are used to limit access.Once you have set this, the users will only be able access
   documents (eg. Blog Post) where the link exists (eg. Blogger).
@@ -528,6 +559,7 @@ Created a doctype named trainees_details with some fields and after that created
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 19-Apr-2022**
 ## Permissions in Frappe/ErpGuru
+
 - Permissions at level 0 are Document Level permissions, i.e. they are primary for access to the document.
 - Permissions at higher levels are Field Level permissions. All Fields have a Permission Level set against them and the rules defined that permissions       apply to the field. This is useful in case you want to hide or make certain field read-only for certain Roles.
 - You can use Customize Form to set levels on fields. Setup > Customize Form
@@ -537,6 +569,7 @@ Created a doctype named trainees_details with some fields and after that created
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 20-Apr-2022**
 ## Desk Customization
+
 - To customize the desk according to roles and permissions,so a particular user has access to particular tabs like student,instructor, programs etc. 
 - Giving different permissions one by one  to the user in order to find whether getting the desired result or not.
 - To show diffrent DFD's, charts etc.
@@ -548,6 +581,7 @@ Created a doctype named trainees_details with some fields and after that created
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 21-Apr-2022**
 ## Web views of attendance module to teacher on LMS
+
 - To provide the easy access of different modules like attendance, quiz etc..
 - under the LMS folder, I found a file named course.html and there I pasted the link for the attendance and other modules so the instructor won't face any   problem while finding these modules.
 
