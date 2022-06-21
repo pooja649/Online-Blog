@@ -35,7 +35,7 @@ Date: 4-Feb-2022
 Date: 5-Feb-2022
 ## Introduction to frappe
 
-- Frappe, pronounced fra-pay, is a full stack, batteries-included, web framework written in Python and Javascript with MariaDB as the database. It is the framework which powers ERPNext, is pretty generic and can be used to build database driven apps.
+- Frappe, pronounced fra-pay, is a full stack, batteries-included, web framework written in Python and Javascript with MariaDB as the database. It is the framework which powers ErpGuru, is pretty generic and can be used to build database driven apps.
 #### Why Frappe?
 
 The key difference in Frappe compared to other frameworks is that meta-data is also treated as data. This enables you to build front-ends very easily. We believe in a monolithic architecture, so Frappe comes with almost everything you need to build a modern web application. It has a full featured Admin UI called the Desk that handles forms, navigation, lists, menus, permissions, file attachment and much more out of the box.
@@ -71,7 +71,7 @@ The key difference in Frappe compared to other frameworks is that meta-data is a
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 10-Feb-2022** 
-## Introduction to Docker, Virtual Machine and ERPNext
+## Introduction to Docker, Virtual Machine and ErpGuru
 
 **What is Docker?**
 <p align="justify">Docker is popular virtualization software that helps its users in developing, deploying, monitoring, and running applications in a Docker Container with all their dependencies (frameworks, libraries, etc.) to run an application in an efficient and bug-free manner.Docker Containers are Light-weight, Applications run in isolation,Occupies less space, Easily portable and highly secure, Short boot-up
@@ -86,19 +86,19 @@ time.</p>
 - It can run only a limited number of VMs on a system.
 <br>
 
-**What is ERPNext?**
-<p align="justify">ERPNext is a full-featured business management solution that helps SMEs to record all their business transactions in a single system. With ERPNext, SMEs can make informed, fact-based, timely decisions to remain ahead in the competition. It serves as the backbone of a business adding strength, transparency, and control to your growing enterprise.</p>
+**What is ErpGuru?**
+<p align="justify">ErpGuru is a full-featured business management solution that helps SMEs to record all their business transactions in a single system. With ErpGuru, SMEs can make informed, fact-based, timely decisions to remain ahead in the competition. It serves as the backbone of a business adding strength, transparency, and control to your growing enterprise.</p>
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 11-Feb-2022** 
-## Installing ERPNext in Frappe-bench
+## Installing ErpGuru in Frappe-bench
 
 - If Frappe-bench installed in system follow second method otherwise you will get error.
 - Installion done with two manner 
 - By Adduser in linux
-- And create Erpnext app and site in frappe-bench Diretory.
-- For installation steps [Click here](https://github.com/D-codE-Hub/ERPNext-installation-Guide/blob/main/README.md). 
+- And create ErpGuru app and site in frappe-bench Diretory.
+- For installation steps [Click here](https://github.com/D-codE-Hub/ErpGuru-installation-Guide/blob/main/README.md). 
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
@@ -121,8 +121,8 @@ time.</p>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 15-Feb-2022** 
-## Introduction to Education module in Erpnext
-<p align="justify">The Education domain in ERPNext is designed to meet requirements of any organization which imparts knowledge and believe in doing so in an organized fashion. It has already been used at schools, colleges and even in private firms.
+## Introduction to Education module in ErpGuru
+<p align="justify">The Education domain in ErpGuru is designed to meet requirements of any organization which imparts knowledge and believe in doing so in an organized fashion. It has already been used at schools, colleges and even in private firms.
 It helps you to effectively manage administration and allows you to focus on what is most important for your institute, to educate!</p>
 <br>
 
@@ -173,10 +173,10 @@ Role of Tmux-
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 22-Feb-2022** 
-## Comparison between ErpNext 12 and 13 version
--The major difference is the UI interaction. In ERPNext 13 the UI design is very user friendly as compared to ERPNext 12 version,
+## Comparison between ErpGuru 12 and 13 version
+-The major difference is the UI interaction. In ErpGuru 13 the UI design is very user friendly as compared to ErpGuru 12 version,
 - In the 13 version , we have access to different themes well , this feature is not available in the 12 version.
-- In ERPnext 12 version we have to manually set up the domains which is time consuming while on the other hand in 13 version it give us pre-processed         domains with very clean UI which makes it simpler.
+- In ErpGuru 12 version we have to manually set up the domains which is time consuming while on the other hand in 13 version it give us pre-processed         domains with very clean UI which makes it simpler.
 - In version 13 while setting up it automatically created a blog/webpage for the user and in version 12 this is missing or we can manually create it .
 
 
@@ -185,7 +185,7 @@ Role of Tmux-
 	
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 23-Feb-2022** 
-## Education module in ErpNext version 12 and 13
+## Education module in ErpGuru version 12 and 13
 - Studied about the education module of both the version.
 - Various fields and diffrences of user interface in both the versions. 
 
@@ -193,7 +193,7 @@ Role of Tmux-
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 24-Feb-2022** 
-## Course Schedule in ErpNext
+## Course Schedule in ErpGuru
 - Course Schedule can be used for scheduling a particular course by an Instructor.
 - Create a new Course Schedule from the Schedule Calendar.Select the Student Group for which you want to create the Course Schedule.
 - Select the Instructor who will be tutoring the students for the course.Select the Course for which the schedule is being prepared.
@@ -220,15 +220,15 @@ Role of Tmux-
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date :01-Mar-2022**
-## Chat in ErpNext
-- The Chat room is a tool, which allows you to send and receive messages to other Users within your ERPNext account.
+## Chat in ErpGuru
+- The Chat room is a tool, which allows you to send and receive messages to other Users within your ErpGuru account.
 - To start a Chat, you can click on the Chat icon on the Desk. When you do this, a Chatbox will Pop Up, which will have a list of all the Users you have     been chatting with. 
 
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 3-Mar-2022** 
-## Chat Room in ErpNext
+## Chat Room in ErpGuru
 For every new Chat that has been opened in the system, a Chat Room gets created. A list of all your Chat Rooms can be fetched in the Chat Room List when you search for it from the Global search.
 
 <br>
@@ -236,7 +236,7 @@ For every new Chat that has been opened in the system, a Chat Room gets created.
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 4-Mar-2022** 
 ## Chat Profile Report
--This report shall show you a list of all the active profiles in your ERPNext account with whom you can start a chat.
+-This report shall show you a list of all the active profiles in your ErpGuru account with whom you can start a chat.
 -To start a new chat, simply type the name of the User in the search bar of chatbox and start communicating.
 
 <br>
@@ -297,7 +297,7 @@ For every new Chat that has been opened in the system, a Chat Room gets created.
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 14-Mar-2022** 
-## Learning about Fee Module in Erpnext
+## Learning about Fee Module in ErpGuru
 - Here I get details how to create new fees for student.
 - Learning Different prerequisites before creating new fees.
 - Like Student, Fee Category, Fee Structure etc.
@@ -306,7 +306,7 @@ For every new Chat that has been opened in the system, a Chat Room gets created.
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 15-Mar-2022** 
-## Creating Fees in Erpnext on server
+## Creating Fees in ErpGuru on server
 - Creating Different Fees Categories available in school like Tution Fee, Hostle Fee etc.
 - Searching how to add bus fees based on their route.
 - Creating student, Enroll them in a program, Creating courses etc. 
@@ -316,7 +316,7 @@ For every new Chat that has been opened in the system, a Chat Room gets created.
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 16-Mar-2022** 
 ##  Creating Fee Structure
-<p align="justify">Creating  new Fees structures. So while creating new fees, fees should be added automatically by selecting Fee Structure. We are trying to add an admission fee in Student form along with this we are exploring where all the records are saved so that we keep track how many fees are paid or pending. We track this record in 'Report Student fee collection' doctype. We are also trying to add a penalty on overdue fees but we find this feature is not currently available in erpnext.</p>
+<p align="justify">Creating  new Fees structures. So while creating new fees, fees should be added automatically by selecting Fee Structure. We are trying to add an admission fee in Student form along with this we are exploring where all the records are saved so that we keep track how many fees are paid or pending. We track this record in 'Report Student fee collection' doctype. We are also trying to add a penalty on overdue fees but we find this feature is not currently available in ErpGuru.</p>
 
 <br>
 
@@ -355,10 +355,10 @@ For every new Chat that has been opened in the system, a Chat Room gets created.
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 23-Mar-2022** 
-## Installing new Erpnext on server
-- First we install frappe framework then install erpnext with education domain.
+## Installing new ErpGuru on server
+- First we install frappe framework then install ErpGuru with education domain.
 - After this we are collecting students and teachers data from Nankana Sahib Public School.
-- Arranging data according to doctype in erpnext.  
+- Arranging data according to doctype in ErpGuru.  
 
  <br>
 
@@ -427,7 +427,7 @@ I really enjoyed reading the above reports.</p>
 **Date : 2-Apr-2022**
 ## Naming series According to the company
 -Task to change the naming series of student applicant doctype according to the company abberivation so that we can identify the students of each company(school/college) by looking at their naming series. 
--There was a solution avialable in the official documentation of erpnext and we tried it but it wasn't working. We also tried some changes but still it wasn't working. After this we were searching for the other solutions and there was a solution available in the discussion forum.
+-There was a solution avialable in the official documentation of ErpGuru and we tried it but it wasn't working. We also tried some changes but still it wasn't working. After this we were searching for the other solutions and there was a solution available in the discussion forum.
 -We tried it on local machines and it was working perfectly after this we implemented it on gne11.gndec.ac.in
 <br>
 
@@ -449,7 +449,7 @@ Created a doctype named trainees_details with some fields and after that created
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 7-Apr-2022**
 ## Trying to understand the student leave section
-- Trying to understand the student leave section under education domain of erpnext. I was trying to understand the default workflow of student leave         section, how students will add their leaves and how instructor will get notification of the leaves.
+- Trying to understand the student leave section under education domain of ErpGuru. I was trying to understand the default workflow of student leave         section, how students will add their leaves and how instructor will get notification of the leaves.
 
 <br>
 
@@ -473,14 +473,14 @@ Created a doctype named trainees_details with some fields and after that created
 **Date : 11-Apr-2022**
 ## Learning Human Resource Module
 <p align='justify'>The Human Resources (HR) module covers the processes related to the HR department of a company. It maintains a complete employee database including contact information, salary details, attendance, performance evaluation, leaves, and appraisal records.The most important feature here is processing the payroll by using Payroll Entry to generate Salary Slips. Most countries have complex tax rules stating which expenses the company can make on behalf of its Employees.</p>
-<p align='justify'>There are a set of rules for the company to deduct taxes and social security from employee payroll. ERPNext accommodates all types of taxes and their calculation.</p>
+<p align='justify'>There are a set of rules for the company to deduct taxes and social security from employee payroll. ErpGuru accommodates all types of taxes and their calculation.</p>
 
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 12-Apr-2022**
 ## Report Generation of student
--  In the erpnext education module I was trying to generate report card for students while creating report card I am able to show the courses and exams but    not able to show the marks of students in the report card.
+-  In the ErpGuru education module I was trying to generate report card for students while creating report card I am able to show the courses and exams but    not able to show the marks of students in the report card.
 -  I have assigned the marks to the particular students.
 
 
@@ -517,7 +517,7 @@ Created a doctype named trainees_details with some fields and after that created
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 18-Apr-2022**
-## Permissions in Frappe/ERPNext
+## Permissions in Frappe/ErpGuru
 - User Permissions are used to limit users to specific records. Setup> User Permissions
 - Select Document Types to set which User Permissions are used to limit access.Once you have set this, the users will only be able access
   documents (eg. Blog Post) where the link exists (eg. Blogger).
@@ -527,7 +527,7 @@ Created a doctype named trainees_details with some fields and after that created
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 19-Apr-2022**
-## Permissions in Frappe/ERPNext
+## Permissions in Frappe/ErpGuru
 - Permissions at level 0 are Document Level permissions, i.e. they are primary for access to the document.
 - Permissions at higher levels are Field Level permissions. All Fields have a Permission Level set against them and the rules defined that permissions       apply to the field. This is useful in case you want to hide or make certain field read-only for certain Roles.
 - You can use Customize Form to set levels on fields. Setup > Customize Form
@@ -556,7 +556,7 @@ Created a doctype named trainees_details with some fields and after that created
  <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 22-Apr-2022**
 <h3 align='center'>Presentation on Cost Centre-4</h3>
-Today I gave presentation to all my mates in which about the Cost Centre in Erpnext and explained about the diffrent nodes of cost center about the particular field. I have explained about the chart of accounts where we have whole details of amount in the receivable account and different kinds of accounts.
+Today I gave presentation to all my mates in which about the Cost Centre in ErpGuru and explained about the diffrent nodes of cost center about the particular field. I have explained about the chart of accounts where we have whole details of amount in the receivable account and different kinds of accounts.
 
  
 <br>
@@ -572,7 +572,7 @@ Today I gave presentation to all my mates in which about the Cost Centre in Erpn
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 25-Apr-2022**
 <h3 align='center'>Reading the files of LMS</h3>
-As by using user permissions still instructor was able to see all the programs and courses. To find the solution for this we are trying to understand the structure of lms for this i was reading all the files of lms present in erpnext in the programs and course file it is metioned that by default instructor has access to all the programs and courses. 
+As by using user permissions still instructor was able to see all the programs and courses. To find the solution for this we are trying to understand the structure of lms for this i was reading all the files of lms present in ErpGuru in the programs and course file it is metioned that by default instructor has access to all the programs and courses. 
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
@@ -690,7 +690,7 @@ Created Presentation for the Whole Project To so that we can present our work to
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 10-May-2022**
-<h3 align='center'>Exploring HR module in erpnext</h3>
+<h3 align='center'>Exploring HR module in ErpGuru</h3>
 
 - Working on HR module first we need to create new employees.
 - Fill the details related to employees like educational qualification, designation, personal details, salary details, joining details, etc.
@@ -705,9 +705,9 @@ Created Presentation for the Whole Project To so that we can present our work to
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 12-May-2022**
-<h3 align='center'>Buying Module in ErpNext</h3>
+<h3 align='center'>Buying Module in ErpGuru</h3>
 
-- Buying the right quantities in right amounts can affect your cash flow and profitability positively. ERPNext contains a set of transactions that will       make your buying process as efficient and seamless as possible
+- Buying the right quantities in right amounts can affect your cash flow and profitability positively. ErpGuru contains a set of transactions that will       make your buying process as efficient and seamless as possible
 - Purchase Order can be created directly, or by fetching data from Material Request or Supplier Quotation. When ordered items are received from Supplier,     Purchase Receipt is created against Purchase Order.
 - setting up masters required for creating Customer and Supplier like Customer Group, Territory and Supplier Group.
 <br>
@@ -792,7 +792,7 @@ For creating new school leaving certificate format goto print format. For Adding
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 24-May-2022**
-<h3 align='center'>Sending Messages to specific Students using ERPNext</h3>
+<h3 align='center'>Sending Messages to specific Students using ErpGuru</h3>
 - Creating New Email Group Add Subscribers to whom we want to send emails.
 - We can them in a bluk by writing their emails.
 - After adding subscriber Create New newsletter in which we have to add email group which is created.
@@ -803,10 +803,10 @@ For creating new school leaving certificate format goto print format. For Adding
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 25-May-2022**
-<h3 align='center'>Creating Collapse view without using ErpNext Desk using Bootstrap</h3>
+<h3 align='center'>Creating Collapse view without using ErpGuru Desk using Bootstrap</h3>
 - First we create collapse multiple tab effect with bootstrap and html.
 - In which we use bootstrap classes with html tags.
-- Then our next task is to put in erpnext directory and run it with jinja templating.
+- Then our next task is to put in ErpGuru directory and run it with jinja templating.
 - For this we remove all html starting tags and bootstrap cdn links because frappe also uses Bootstrap-4 classes.
 - Replace Html starting tags with jinja starting template and trying to fetch data from database.
 
