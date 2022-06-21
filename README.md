@@ -555,7 +555,7 @@ Created a doctype named trainees_details with some fields and after that created
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 22-Apr-2022**
-<h3 align='left'>Presentation on Cost Centre-4</h3>
+<h2 align='left'>Presentation on Cost Centre-4</h2>
 
 Today I gave presentation to all my mates in which about the Cost Centre in ErpGuru and explained about the diffrent nodes of cost center about the particular field. I have explained about the chart of accounts where we have whole details of amount in the receivable account and different kinds of accounts.
 
@@ -564,7 +564,7 @@ Today I gave presentation to all my mates in which about the Cost Centre in ErpG
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 23-Apr-2022**
-<h3 align='left'>Desk Customization</h3>
+<h2 align='left'>Desk Customization</h2>
 
 - The task was to customize the desk according to roles and permissions,so a particular user has access to particular tabs like student,instructor,programs   etc. 
 - Now I am giving different permissions one by one  to the user in order to find whether I'm getting the desired result or not.
@@ -573,13 +573,13 @@ Today I gave presentation to all my mates in which about the Cost Centre in ErpG
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 25-Apr-2022**
-<h3 align='left'>Reading the files of LMS</h3>
+<h2 align='left'>Reading the files of LMS</h2>
 As by using user permissions still instructor was able to see all the programs and courses. To find the solution for this we are trying to understand the structure of lms for this i was reading all the files of lms present in ErpGuru in the programs and course file it is metioned that by default instructor has access to all the programs and courses. 
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 26-Apr-2022**
-<h3 align='left'>Naming Series as Department wise</h3>
+<h2 align='left'>Naming Series as Department wise</h2>
 
 - Assigning department to Hod & Clerk to one department in User Permission List.
 - We use condition like cse = department_name.
@@ -591,7 +591,7 @@ As by using user permissions still instructor was able to see all the programs a
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 27-Apr-2022**
-<h3 align='left'>Fee Schedule</h3>
+<h2 align='left'>Fee Schedule</h2>
 
 - We set up students on the local system who have siblings when we select option siblings studying in the same school then we are able to select students     from available students but the program is not fetched. Along with this We find the received income cost center is also set in the Fee schedule. We can     find all the income in the Fee cost center.
 
@@ -600,7 +600,7 @@ As by using user permissions still instructor was able to see all the programs a
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 28-Apr-2022**
-<h3 align='left'>New Fee requirent</h3>
+<h2 align='left'>New Fee requirent</h2>
 
 - First we Create Fee Categories Like Development Fee, Tutuion Fee, Transportation fee.
 - Creating Fee Structure For Different Classes and it depends on siblings fee.
@@ -610,7 +610,7 @@ As by using user permissions still instructor was able to see all the programs a
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 29-Apr-2022**
-<h3 align='left'>Implementing Fee on local server</h3>
+<h2 align='left'>Implementing Fee on local server</h2>
 
 - First we import data like Program, student, courses.
 - Creating Fee category as per requirement Development Fee, Tution Fee, Transporatation Fee.
@@ -622,7 +622,7 @@ As by using user permissions still instructor was able to see all the programs a
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 2-May-2022**
-<h3 align='left'>Hackathon day 1</h3>
+<h2 align='left'>Hackathon day 1</h2>
 
 Roles and flow for Parent Comapany:-
 
@@ -645,7 +645,7 @@ Instructors:- will have access to student attendance, quiz, videos, article, Dia
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 3-May-2022**
-<h3 align='left'>Hackathon day 2</h3>
+<h2 align='left'>Hackathon day 2</h2>
 
 Students:- will have access of only LMS and on lms they will have access of programs, Courses, Quizzes, Videos, Articles, daily diary and attendance.
 
@@ -661,14 +661,14 @@ Today, We created Director user of NSET, Superintendent of NSET, Principal user 
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 5-May-2022**
-<h3 align='left'>Creating Presentation with Other Team-mates in Reveal.JS</h3>
+<h2 align='left'>Creating Presentation with Other Team-mates in Reveal.JS</h2>
 
 Created Presentation for the Whole Project To so that we can present our work to the trusties so with the team we created a presentation whcih contains all the infomation related to the erp Syatem which deals with the all kind of accounting, maintaing all students,staff and employees and pushed on github. 
 <br>
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 6-May-2022**
-<h3 align='left'>Understanding the fee structure</h3>
+<h2 align='left'>Understanding the fee structure</h2>
 
 - Implementing the fee module on local host to understand the fee structure. 
 
@@ -676,7 +676,7 @@ Created Presentation for the Whole Project To so that we can present our work to
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 7-May-2022**
-<h3 align='left'>ICreating fee structure for NSPS</h3>
+<h2 align='left'>ICreating fee structure for NSPS</h2>
 
 - Added fee structures for all classes in NSPS and also added new programs with respect to NSPS fee structure.
 - Added fee structure for all the classes from Nursery to 12th.
@@ -686,7 +686,7 @@ Created Presentation for the Whole Project To so that we can present our work to
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 9-May-2022**
-<h3 align='left'>New requirements for fee structure</h3>
+<h2 align='left'>New requirements for fee structure</h2>
 
 - Task given to add discounts in the fees of student on the basis of siblings. 
 - Trying to understand the logic. 
@@ -694,7 +694,7 @@ Created Presentation for the Whole Project To so that we can present our work to
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 10-May-2022**
-<h3 align='left'>Exploring HR module in ErpGuru</h3>
+<h2 align='left'>Exploring HR module in ErpGuru</h2>
 
 - Working on HR module first we need to create new employees.
 - Fill the details related to employees like educational qualification, designation, personal details, salary details, joining details, etc.
@@ -702,7 +702,7 @@ Created Presentation for the Whole Project To so that we can present our work to
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 11-May-2022**
-<h3 align='left'>Transportation Module in Fee</h3>
+<h2 align='left'>Transportation Module in Fee</h2>
 
 - We are trying to add the transportation fee in the fee module so the students who were travelling through the institute transportation 
 
@@ -710,7 +710,7 @@ Created Presentation for the Whole Project To so that we can present our work to
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 12-May-2022**
-<h3 align='left'>Buying Module in ErpGuru</h3>
+<h2 align='left'>Buying Module in ErpGuru</h2>
 
 - Buying the right quantities in right amounts can affect your cash flow and profitability positively. ErpGuru contains a set of transactions that will       make your buying process as efficient and seamless as possible
 - Purchase Order can be created directly, or by fetching data from Material Request or Supplier Quotation. When ordered items are received from Supplier,     Purchase Receipt is created against Purchase Order.
@@ -719,7 +719,7 @@ Created Presentation for the Whole Project To so that we can present our work to
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 13-May-2022**
-<h3 align='left'>Understand the Salary Structure of different employees</h3>
+<h2 align='left'>Understand the Salary Structure of different employees</h2>
 
 - We are going to Accounts Department for understanding Salary structure of different employees.
 - Understand their requirement related to salary like for different employee, there should be different grade pay.
@@ -729,7 +729,7 @@ Created Presentation for the Whole Project To so that we can present our work to
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 14-May-2022**
-<h3 align='left'>Learning Salary Component for New Requirement</h3>
+<h2 align='left'>Learning Salary Component for New Requirement</h2>
 
 - First when we change our company from NSPS to GNDEC.
 - Then all the Salary Components of employee are visisble in Salary Components but are not shown in Salary structure.
@@ -738,7 +738,7 @@ Created Presentation for the Whole Project To so that we can present our work to
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 16-May-2022**
-<h3 align='left'>Creating Salary Component</h3>
+<h2 align='left'>Creating Salary Component</h2>
 
 - According to new requirement different category employees have different components.
 - Now same salary component can have different value for two employees like SML for accounts employee and teaching employee are different.
@@ -747,7 +747,7 @@ Created Presentation for the Whole Project To so that we can present our work to
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 17-May-2022**
-<h3 align='left'>Creating Salary Structure</h3>
+<h2 align='left'>Creating Salary Structure</h2>
 
 - After Creating all Salary components which are combined for all the employees.
 - Now we are creating Salary Structure which is the combination of Salary Components in which we list all Earning and deduction components.
@@ -757,7 +757,7 @@ Created Presentation for the Whole Project To so that we can present our work to
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 18-May-2022**
-<h3 align='left'>Display General ledger entry for Fee Record</h3>
+<h2 align='left'>Display General ledger entry for Fee Record</h2>
 
 - Goto Accounting Module then goto General Ledger section.
 - Select your Company, Select from date, to date for which you want to show Entries.
@@ -767,7 +767,7 @@ Created Presentation for the Whole Project To so that we can present our work to
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 19-May-2022**
-<h3 align='left'>Collecting Fees in one Fee Cost Center</h3>
+<h2 align='left'>Collecting Fees in one Fee Cost Center</h2>
 
 - For creating new Fee collection head Create new Account.
 - Add account name, Select Company name, Currency type.
@@ -778,7 +778,7 @@ Created Presentation for the Whole Project To so that we can present our work to
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 21-May-2022**
-<h3 align='left'>Displaying Fees different head-wise like tution fee, Development fee</h3>
+<h2 align='left'>Displaying Fees different head-wise like tution fee, Development fee</h2>
 
 - Goto Fee list under Education domain.
 - Under list view option select report view, Select Add group option here select Fee Category under Fee Component
@@ -789,7 +789,7 @@ Created Presentation for the Whole Project To so that we can present our work to
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 23-May-2022**
-<h3 align='left'>Generating School Leaving Certificate</h3>
+<h2 align='left'>Generating School Leaving Certificate</h2>
 
 For creating new school leaving certificate format goto print format. For Adding new print format select student doctype for which you want to create school leaving certificate, Select education module select format as standard format or not we use ‘NO’ option because this format is only used when we want to generate school leaving certificate. Use custom css for designing logo of company for fetching student name we use doc.first_name. For fetching class name we use frappe function, frappe.db.get_value(‘Program Enrollment’, doc.student, ‘program’).
 
@@ -797,7 +797,7 @@ For creating new school leaving certificate format goto print format. For Adding
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 24-May-2022**
-<h3 align='left'>Sending Messages to specific Students using ErpGuru</h3>
+<h2 align='left'>Sending Messages to specific Students using ErpGuru</h2>
 
 - Creating New Email Group Add Subscribers to whom we want to send emails.
 - We can them in a bluk by writing their emails.
@@ -809,7 +809,7 @@ For creating new school leaving certificate format goto print format. For Adding
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 25-May-2022**
-<h3 align='left'>Creating Collapse view without using ErpGuru Desk using Bootstrap</h3>
+<h2 align='left'>Creating Collapse view without using ErpGuru Desk using Bootstrap</h2>
 
 - First we create collapse multiple tab effect with bootstrap and html.
 - In which we use bootstrap classes with html tags.
@@ -821,7 +821,7 @@ For creating new school leaving certificate format goto print format. For Adding
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 **Date : 26-May-2022**
-<h3 align='left'>Automation of Fee Creation of the Students</h3>
+<h2 align='left'>Automation of Fee Creation of the Students</h2>
 
 Once we created the fee of teh student for a single month now we have a problem is that we have to repeat the task again for every month so we need to     automate this process in order to provide the clean and efficient approach.So we automate this process with auto-repeat tool and makes evry student fee     on repeat once it created. It will automatically created after every month and we set the due date 15 days ahed of the date of creation of the fee so the   status of the fee will be changes to overdue after due date.
 
